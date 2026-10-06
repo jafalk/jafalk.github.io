@@ -72,6 +72,7 @@
   .btn{display:inline-block; text-decoration:none; font-weight:700; font-size:1rem;
     padding:14px 26px; border-radius:7px}
   .btn-primary{background:var(--copper); color:var(--ink)}
+  button.btn{border:0; cursor:pointer; font-family:var(--sans)}
   .btn-primary:hover{background:var(--copper-lift)}
   .btn-ghost{color:#C9D2DE; border:1px solid #3A4658; padding:13px 22px}
   .btn-ghost:hover{border-color:var(--copper); color:var(--copper)}
@@ -419,7 +420,7 @@
         <h3>Our white papers</h3>
         <p>Couplings and Enterprise AI - white papers and exec summaries. Sign up and we will send them.</p>
       </div>
-      <a class="btn btn-primary" href="mailto:sales@looplo.com?subject=White%20papers%20-%20Couplings%20and%20Enterprise%20AI">Get the material</a>
+      <button class="btn btn-primary" type="button" onclick="looploWP()">Get the material</button>
     </div>
   </div>
 </section>
@@ -455,5 +456,6 @@
   });
 })();
 </script>
+<script src="wp.js" defer></script>
 </body>
 </html>

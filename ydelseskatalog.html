@@ -55,6 +55,11 @@
     -webkit-font-smoothing:antialiased;
   }
   .wrap{width:100%; max-width:960px; margin:0 auto; padding:0 24px}
+  .topnav{border-bottom:1px solid var(--hairline)}
+  .topnav .wrap{display:flex; gap:26px; padding-top:18px; padding-bottom:14px}
+  .topnav a{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:13px; letter-spacing:.03em; text-decoration:none; color:var(--muted); padding-bottom:3px; border-bottom:2px solid transparent}
+  .topnav a.active{color:var(--accent); border-bottom-color:var(--accent)}
+  .topnav a:hover{color:var(--ink)}
   a{color:var(--accent)}
   a:focus-visible, .btn:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
 
@@ -151,6 +156,8 @@
 </head>
 <body>
 
+<nav class="topnav"><div class="wrap"><a href="index.html">CV</a><a href="ydelseskatalog.html" class="active">Ydelser</a></div></nav>
+
 <header class="hero">
   <div class="wrap">
     <h1>Ydelser</h1>
@@ -246,7 +253,7 @@
 <footer>
   <div class="wrap">
     <span>Jacob Falkentorp · København</span>
-    <span>CVR-registreret virksomhed · v1-5-2</span>
+    <span>CVR-registreret virksomhed · v1-6-0</span>
   </div>
 </footer>
 

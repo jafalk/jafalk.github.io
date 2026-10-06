@@ -158,6 +158,16 @@
   .tag b{color:var(--copper)}
 
   /* CTA */
+  /* Insights */
+  .insights{background:var(--white); border-top:1px solid var(--line)}
+  .ins-link{display:inline-block; margin-top:4px; font-weight:700; color:var(--copper); text-decoration:none}
+  .ins-link:hover{text-decoration:underline}
+  .wp{margin-top:34px; display:flex; flex-wrap:wrap; gap:20px 32px; align-items:center; justify-content:space-between;
+    background:var(--paper); border:1px solid var(--line); border-left:3px solid var(--copper); border-radius:10px; padding:26px 28px}
+  .wp h3{margin:0 0 6px; font-size:1.2rem; font-weight:700}
+  .wp p{margin:0; color:var(--grey); max-width:54ch}
+  .wp .btn{white-space:nowrap}
+
   .cta{background:var(--ink); color:var(--white); text-align:center}
   .cta h2{color:var(--white); margin:0 auto 18px; max-width:22ch}
   .cta p{color:#9AA6B6; max-width:50ch; margin:0 auto 30px}
@@ -176,7 +186,7 @@
     <nav class="topdoors">
       <span class="grp">
         <a href="index.html" class="active">Custody</a>
-        <a href="https://looplo.com" target="_blank" rel="noopener">Insights</a>
+        <a href="https://looplo.com/insights/kobling.html" target="_blank" rel="noopener">Insights</a>
       </span>
       <span class="grp doors">
         <a href="klient.html"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Klient</a>
@@ -380,6 +390,22 @@
   </div>
 </section>
 
+<section class="insights" id="insights">
+  <div class="wrap">
+    <p class="eyebrow sec-eyebrow">Insights</p>
+    <h2>Substans frem for reklame</h2>
+    <p class="lead">Looplo skriver løbende om koblinger, fundament og suverænitet.</p>
+    <a class="ins-link" href="https://looplo.com/insights/kobling.html" target="_blank" rel="noopener">Se alle opslag &#8594;</a>
+    <div class="wp">
+      <div>
+        <h3>Vores white papers</h3>
+        <p>Kobling og Enterprise AI - white papers og exec summaries. Skriv dig på, så sender vi dem.</p>
+      </div>
+      <a class="btn btn-primary" href="mailto:jacob@falkentorp.dk?subject=White%20papers%20-%20Kobling%20og%20Enterprise%20AI">Få materialet</a>
+    </div>
+  </div>
+</section>
+
 <section class="cta" id="kontakt">
   <div class="wrap">
     <p class="eyebrow sec-eyebrow" style="text-align:center">Kom i gang</p>
@@ -393,7 +419,7 @@
 <footer>
   <div class="wrap">
     <span class="guard-line">Looplo Custody &middot; governance i egen kontrol</span>
-    <span>CVR-registreret virksomhed &middot; København &middot; v1-2-0</span>
+    <span>CVR-registreret virksomhed &middot; København &middot; v1-3-0</span>
   </div>
 </footer>
 

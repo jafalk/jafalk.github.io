@@ -30,8 +30,11 @@
     font-size:16.5px; line-height:1.6; -webkit-font-smoothing:antialiased;}
   .wrap{width:100%; max-width:820px; margin:0 auto; padding:0 24px}
   .topnav{border-bottom:1px solid var(--hairline)}
-  .topnav .wrap{display:flex; gap:26px; padding-top:18px; padding-bottom:14px}
+  .topnav .wrap{display:flex; justify-content:space-between; align-items:baseline; padding-top:18px; padding-bottom:14px}
+  .topnav .grp{display:flex; gap:26px}
+  .topnav .grp.lang{gap:14px}
   .topnav a{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:13px; letter-spacing:.03em; text-decoration:none; color:var(--muted); padding-bottom:3px; border-bottom:2px solid transparent}
+  .topnav .grp.lang a{font-size:12px}
   .topnav a.active{color:var(--accent); border-bottom-color:var(--accent)}
   .topnav a:hover{color:var(--ink)}
 
@@ -61,7 +64,7 @@
 </style>
 </head>
 <body>
-<nav class="topnav"><div class="wrap"><a href="index.html" class="active">CV</a><a href="ydelseskatalog.html">Ydelser</a></div></nav>
+<nav class="topnav"><div class="wrap"><span class="grp"><a href="index.html" class="active">CV</a><a href="ydelseskatalog.html">Ydelser</a></span><span class="grp lang"><a href="index.html" class="active">DA</a><a href="en/index.html">EN</a></span></div></nav>
 <div class="wrap">
 
   <header>
@@ -140,7 +143,7 @@
 
   </section>
 
-  <footer>Jacob Falkentorp · København · CVR-registreret virksomhed · v1-6-1</footer>
+  <footer>Jacob Falkentorp · København · CVR-registreret virksomhed · v1-8-0</footer>
 
 </div>
 </body>

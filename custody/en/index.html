@@ -51,6 +51,7 @@
   .mainmenu{display:flex; gap:24px; align-items:center; flex-wrap:wrap}
   .mainmenu a{font-size:15px; font-weight:600; color:var(--grey); text-decoration:none; padding:14px 0; border-bottom:2px solid transparent}
   .mainmenu a.active{color:var(--copper); border-color:var(--copper)}
+  .mainmenu a.far{margin-left:auto}
   .mainmenu a:hover{color:var(--ink)}
   .nav-cta{font-size:14px; font-weight:600; text-decoration:none; color:var(--white); background:var(--ink); padding:9px 16px; border-radius:6px; white-space:nowrap}
   .nav-cta:hover{background:var(--ink2)}
@@ -208,10 +209,10 @@
       <nav class="mainmenu">
         <a href="index.html" class="active">Custody</a>
         <a href="https://looplo.ai" target="_blank" rel="noopener">AI</a>
-        <a href="https://looplo.com/insights/kobling.html" target="_blank" rel="noopener">Insights</a>
         <a href="https://looplo.com/groent.html" target="_blank" rel="noopener">Green</a>
         <a href="https://looplo.com/verify.html" target="_blank" rel="noopener">Verify</a>
         <a href="https://looplo.com/peer.html" target="_blank" rel="noopener">Peer</a>
+        <a href="https://looplo.com/insights/kobling.html" class="far" target="_blank" rel="noopener">Insights</a>
       </nav>
       <a class="nav-cta" href="#kontakt">Book a walkthrough</a>
     </div>
@@ -440,5 +441,19 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var ids=['top','produkt','insights','kontakt'];
+  var links=document.querySelectorAll('.top-right .grp.lang a:not(.active)');
+  Array.prototype.forEach.call(links,function(a){
+    a.addEventListener('click',function(){
+      var cur=null;
+      for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]); if(el && el.getBoundingClientRect().top<=140) cur=ids[i];}
+      var base=a.getAttribute('href').split('#')[0];
+      a.setAttribute('href', cur?base+'#'+cur:base);
+    });
+  });
+})();
+</script>
 </body>
 </html>

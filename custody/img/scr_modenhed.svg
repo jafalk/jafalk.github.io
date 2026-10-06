@@ -1,0 +1,168 @@
+<!-- Looplo kerne-IP · scr_modenhed.svg · v1-0-0 · 2026-08-19 · kilde: se VERSION_kerne_ip.md -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<rect width="1400" height="900" fill="#FBFBFC"/>
+<text x="56" y="52" text-anchor="start" font-family="Arial" font-size="13" font-weight="bold" fill="#3E5C76">1 · MÅLER</text>
+<text x="56" y="90" text-anchor="start" font-family="Arial" font-size="27" font-weight="bold" fill="#14294A">Modenhed pr. domæne</text>
+<text x="56" y="118" text-anchor="start" font-family="Arial" font-size="14" fill="#425571">Rød prik er den svageste underdimension - den der driver gælden på en kobling.</text>
+<rect x="56" y="140" width="254" height="150" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.2"/>
+<g transform="translate(131.0,158)">
+<g transform="translate(52,52)"><polygon points="0.0,-14.7 12.7,-7.3 12.7,7.3 0.0,14.7 -12.7,7.3 -12.7,-7.3" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-29.3 25.4,-14.7 25.4,14.7 0.0,29.3 -25.4,14.7 -25.4,-14.7" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-44.0 38.1,-22.0 38.1,22.0 0.0,44.0 -38.1,22.0 -38.1,-22.0" fill="none" stroke="#DCE2EA" stroke-width="1.4"/>
+<line x1="0" y1="0" x2="0.0" y2="-44.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="38.1" y2="-22.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="38.1" y2="22.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="0.0" y2="44.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="-38.1" y2="22.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="-38.1" y2="-22.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-39.1 33.9,-19.6 33.9,19.6 0.0,44.0 -25.4,14.7 -33.9,-19.6" fill="#3E5C76" fill-opacity="0.16" stroke="#3E5C76" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-39.1" r="3" fill="#3E5C76"/>
+<circle cx="33.9" cy="-19.6" r="3" fill="#3E5C76"/>
+<circle cx="33.9" cy="19.6" r="3" fill="#3E5C76"/>
+<circle cx="0.0" cy="44.0" r="3" fill="#3E5C76"/>
+<circle cx="-25.4" cy="14.7" r="8" fill="#B23A3A"/>
+<circle cx="-33.9" cy="-19.6" r="3" fill="#3E5C76"/></g>
+</g>
+<text x="183.0" y="272" text-anchor="middle" font-family="Arial" font-size="12.5" fill="#425571">Enterprise</text>
+<text x="183.0" y="286" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#3E5C76">8 af 9</text>
+<rect x="328" y="140" width="254" height="150" rx="10" fill="#EDF1F7" stroke="#2E7D4F" stroke-width="2"/>
+<g transform="translate(403.0,158)">
+<g transform="translate(52,52)"><polygon points="0.0,-14.7 11.5,-9.1 14.3,3.3 6.4,13.2 -6.4,13.2 -14.3,3.3 -11.5,-9.1" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-29.3 22.9,-18.3 28.6,6.5 12.7,26.4 -12.7,26.4 -28.6,6.5 -22.9,-18.3" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-44.0 34.4,-27.4 42.9,9.8 19.1,39.6 -19.1,39.6 -42.9,9.8 -34.4,-27.4" fill="none" stroke="#DCE2EA" stroke-width="1.4"/>
+<line x1="0" y1="0" x2="0.0" y2="-44.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="34.4" y2="-27.4" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="42.9" y2="9.8" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="19.1" y2="39.6" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="-19.1" y2="39.6" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="-42.9" y2="9.8" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="-34.4" y2="-27.4" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-34.2 26.8,-21.3 28.6,6.5 6.4,13.2 -12.7,26.4 -28.6,6.5 -22.9,-18.3" fill="#2E7D4F" fill-opacity="0.16" stroke="#2E7D4F" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-34.2" r="3" fill="#2E7D4F"/>
+<circle cx="26.8" cy="-21.3" r="3" fill="#2E7D4F"/>
+<circle cx="28.6" cy="6.5" r="3" fill="#2E7D4F"/>
+<circle cx="6.4" cy="13.2" r="8" fill="#B23A3A"/>
+<circle cx="-12.7" cy="26.4" r="3" fill="#2E7D4F"/>
+<circle cx="-28.6" cy="6.5" r="3" fill="#2E7D4F"/>
+<circle cx="-22.9" cy="-18.3" r="3" fill="#2E7D4F"/></g>
+</g>
+<text x="455.0" y="272" text-anchor="middle" font-family="Arial" font-size="12.5" fill="#425571">Zero</text>
+<text x="455.0" y="286" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#2E7D4F">6 af 9</text>
+<rect x="600" y="140" width="254" height="150" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.2"/>
+<g transform="translate(675.0,158)">
+<g transform="translate(52,52)"><polygon points="0.0,-14.7 12.7,-7.3 12.7,7.3 0.0,14.7 -12.7,7.3 -12.7,-7.3" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-29.3 25.4,-14.7 25.4,14.7 0.0,29.3 -25.4,14.7 -25.4,-14.7" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-44.0 38.1,-22.0 38.1,22.0 0.0,44.0 -38.1,22.0 -38.1,-22.0" fill="none" stroke="#DCE2EA" stroke-width="1.4"/>
+<line x1="0" y1="0" x2="0.0" y2="-44.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="38.1" y2="-22.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="38.1" y2="22.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="0.0" y2="44.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="-38.1" y2="22.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="-38.1" y2="-22.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-34.2 21.2,-12.2 16.9,9.8 0.0,29.3 -21.2,12.2 -12.7,-7.3" fill="#E8A33D" fill-opacity="0.16" stroke="#E8A33D" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-34.2" r="3" fill="#E8A33D"/>
+<circle cx="21.2" cy="-12.2" r="3" fill="#E8A33D"/>
+<circle cx="16.9" cy="9.8" r="3" fill="#E8A33D"/>
+<circle cx="0.0" cy="29.3" r="3" fill="#E8A33D"/>
+<circle cx="-21.2" cy="12.2" r="3" fill="#E8A33D"/>
+<circle cx="-12.7" cy="-7.3" r="8" fill="#B23A3A"/></g>
+</g>
+<text x="727.0" y="272" text-anchor="middle" font-family="Arial" font-size="12.5" fill="#425571">Hyperscale Cloud</text>
+<text x="727.0" y="286" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#E8A33D">5 af 9</text>
+<rect x="872" y="140" width="254" height="150" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.2"/>
+<g transform="translate(947.0,158)">
+<g transform="translate(52,52)"><polygon points="0.0,-14.7 13.9,-4.5 8.6,11.9 -8.6,11.9 -13.9,-4.5" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-29.3 27.9,-9.1 17.2,23.7 -17.2,23.7 -27.9,-9.1" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-44.0 41.8,-13.6 25.9,35.6 -25.9,35.6 -41.8,-13.6" fill="none" stroke="#DCE2EA" stroke-width="1.4"/>
+<line x1="0" y1="0" x2="0.0" y2="-44.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="41.8" y2="-13.6" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="25.9" y2="35.6" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="-25.9" y2="35.6" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="-41.8" y2="-13.6" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-19.6 23.2,-7.6 11.5,15.8 -5.7,7.9 -23.2,-7.6" fill="#E8A33D" fill-opacity="0.16" stroke="#E8A33D" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-19.6" r="3" fill="#E8A33D"/>
+<circle cx="23.2" cy="-7.6" r="3" fill="#E8A33D"/>
+<circle cx="11.5" cy="15.8" r="3" fill="#E8A33D"/>
+<circle cx="-5.7" cy="7.9" r="8" fill="#B23A3A"/>
+<circle cx="-23.2" cy="-7.6" r="3" fill="#E8A33D"/></g>
+</g>
+<text x="999.0" y="272" text-anchor="middle" font-family="Arial" font-size="12.5" fill="#425571">AI-kapabiliteter</text>
+<text x="999.0" y="286" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#E8A33D">4 af 9</text>
+<rect x="1144" y="140" width="254" height="150" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.2"/>
+<g transform="translate(1219.0,158)">
+<g transform="translate(52,52)"><polygon points="0.0,-14.7 14.7,0.0 0.0,14.7 -14.7,0.0" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-29.3 29.3,0.0 0.0,29.3 -29.3,0.0" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-44.0 44.0,0.0 0.0,44.0 -44.0,0.0" fill="none" stroke="#DCE2EA" stroke-width="1.4"/>
+<line x1="0" y1="0" x2="0.0" y2="-44.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="44.0" y2="0.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="0.0" y2="44.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="0" y1="0" x2="-44.0" y2="0.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="0.0,-4.9 9.8,0.0 0.0,14.7 -9.8,0.0" fill="#B23A3A" fill-opacity="0.16" stroke="#B23A3A" stroke-width="2.2" stroke-linejoin="round"/>
+<circle cx="0.0" cy="-4.9" r="8" fill="#B23A3A"/>
+<circle cx="9.8" cy="0.0" r="3" fill="#B23A3A"/>
+<circle cx="0.0" cy="14.7" r="3" fill="#B23A3A"/>
+<circle cx="-9.8" cy="0.0" r="3" fill="#B23A3A"/></g>
+</g>
+<text x="1271.0" y="272" text-anchor="middle" font-family="Arial" font-size="12.5" fill="#425571">Psykologisk tryghed</text>
+<text x="1271.0" y="286" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#B23A3A">2 af 9</text>
+<rect x="56" y="320" width="760" height="540" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.3"/>
+<g><polygon points="380.0,543.3 393.0,549.6 396.2,563.7 387.2,575.0 372.8,575.0 363.8,563.7 367.0,549.6" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="380.0,510.0 419.1,528.8 428.7,571.1 401.7,605.0 358.3,605.0 331.3,571.1 340.9,528.8" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="380.0,476.7 445.2,508.0 461.2,578.5 416.2,635.1 343.8,635.1 298.8,578.5 314.8,508.0" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="380.0,443.3 471.2,487.3 493.7,586.0 430.6,665.1 329.4,665.1 266.3,586.0 288.8,487.3" fill="none" stroke="#DCE2EA" stroke-width="0.9"/>
+<polygon points="380.0,410.0 497.3,466.5 526.2,593.4 445.1,695.1 314.9,695.1 233.8,593.4 262.7,466.5" fill="none" stroke="#DCE2EA" stroke-width="1.4"/>
+<line x1="380" y1="560" x2="380.0" y2="410.0" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="380" y1="560" x2="497.3" y2="466.5" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="380" y1="560" x2="526.2" y2="593.4" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="380" y1="560" x2="445.1" y2="695.1" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="380" y1="560" x2="314.9" y2="695.1" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="380" y1="560" x2="233.8" y2="593.4" stroke="#DCE2EA" stroke-width="0.9"/>
+<line x1="380" y1="560" x2="262.7" y2="466.5" stroke="#DCE2EA" stroke-width="0.9"/>
+<text x="386" y="515.0" text-anchor="start" font-family="Arial" font-size="11" fill="#9AA6B6">3</text>
+<text x="386" y="481.6666666666667" text-anchor="start" font-family="Arial" font-size="11" fill="#9AA6B6">5</text>
+<text x="386" y="448.3333333333333" text-anchor="start" font-family="Arial" font-size="11" fill="#9AA6B6">7</text>
+<text x="386" y="415.0" text-anchor="start" font-family="Arial" font-size="11" fill="#9AA6B6">9</text>
+<polygon points="380.0,443.3 471.2,487.3 477.5,582.3 401.7,605.0 336.6,650.1 282.5,582.3 301.8,497.7" fill="#2E7D4F" fill-opacity="0.16" stroke="#2E7D4F" stroke-width="3.4" stroke-linejoin="round"/>
+<circle cx="380.0" cy="443.3" r="5.5" fill="#2E7D4F"/>
+<circle cx="471.2" cy="487.3" r="5.5" fill="#2E7D4F"/>
+<circle cx="477.5" cy="582.3" r="5.5" fill="#2E7D4F"/>
+<circle cx="401.7" cy="605.0" r="8" fill="#B23A3A"/>
+<circle cx="336.6" cy="650.1" r="5.5" fill="#2E7D4F"/>
+<circle cx="282.5" cy="582.3" r="5.5" fill="#2E7D4F"/>
+<circle cx="301.8" cy="497.7" r="5.5" fill="#2E7D4F"/>
+<text x="380.0" y="380.0" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#14294A">Identitet</text>
+<text x="380.0" y="399.0" text-anchor="middle" font-family="Arial" font-size="13" fill="#7C8AA0">vægt 18% · 7 af 9</text>
+<text x="520.7296668442453" y="447.77183566542794" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#14294A">Segmentering</text>
+<text x="520.7296668442453" y="466.77183566542794" text-anchor="start" font-family="Arial" font-size="13" fill="#7C8AA0">vægt 15% · 7 af 9</text>
+<text x="555.4870241927283" y="600.0537681121366" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#14294A">Enhedstillid</text>
+<text x="555.4870241927283" y="619.0537681121366" text-anchor="start" font-family="Arial" font-size="13" fill="#7C8AA0">vægt 12% · 6 af 9</text>
+<text x="458.09907304116047" y="722.1743962224355" text-anchor="start" font-family="Arial" font-size="15" font-weight="bold" fill="#14294A">Dataklassifikation</text>
+<text x="458.09907304116047" y="741.1743962224355" text-anchor="start" font-family="Arial" font-size="13" fill="#B23A3A">vægt 15% · 3 af 9</text>
+<text x="301.90092695883953" y="722.1743962224355" text-anchor="end" font-family="Arial" font-size="15" font-weight="bold" fill="#14294A">Nøgle- og</text>
+<text x="301.90092695883953" y="741.1743962224355" text-anchor="end" font-family="Arial" font-size="15" font-weight="bold" fill="#14294A">hemmelighedsstyring</text>
+<text x="301.90092695883953" y="760.1743962224355" text-anchor="end" font-family="Arial" font-size="13" fill="#7C8AA0">vægt 15% · 6 af 9</text>
+<text x="204.51297580727174" y="600.0537681121366" text-anchor="end" font-family="Arial" font-size="15" font-weight="bold" fill="#14294A">Logning og detektion</text>
+<text x="204.51297580727174" y="619.0537681121366" text-anchor="end" font-family="Arial" font-size="13" fill="#7C8AA0">vægt 10% · 6 af 9</text>
+<text x="239.27033315575463" y="438.771835665428" text-anchor="end" font-family="Arial" font-size="15" font-weight="bold" fill="#14294A">Suverænitet og</text>
+<text x="239.27033315575463" y="457.771835665428" text-anchor="end" font-family="Arial" font-size="15" font-weight="bold" fill="#14294A">jurisdiktion</text>
+<text x="239.27033315575463" y="476.771835665428" text-anchor="end" font-family="Arial" font-size="13" fill="#7C8AA0">vægt 15% · 6 af 9</text></g>
+<text x="86" y="352" text-anchor="start" font-family="Arial" font-size="14" font-weight="bold" fill="#14294A">Zero Trust og suverænitet · 7 underdimensioner</text>
+<rect x="840" y="320" width="504" height="168" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.3"/>
+<text x="866" y="352" text-anchor="start" font-family="Arial" font-size="13" font-weight="bold" fill="#14294A">Domænescore</text>
+<text x="866" y="412" text-anchor="start" font-family="Arial" font-size="52" font-weight="bold" fill="#2E7D4F">6</text>
+<text x="920" y="412" text-anchor="start" font-family="Arial" font-size="14" fill="#7C8AA0">af 9</text>
+<text x="866" y="440" text-anchor="start" font-family="Arial" font-size="11.5" fill="#425571">Vægtet gennemsnit af syv underdimensioner. Vægtsættet er</text>
+<text x="866" y="456" text-anchor="start" font-family="Arial" font-size="11.5" fill="#425571">versioneret, ellers kan to målinger ikke sammenlignes</text>
+<text x="866" y="472" text-anchor="start" font-family="Arial" font-size="11.5" fill="#425571">over tid.</text>
+<rect x="840" y="504" width="504" height="168" rx="10" fill="#FBF3F2" stroke="#E4B4B0" stroke-width="1.4"/>
+<text x="866" y="536" text-anchor="start" font-family="Arial" font-size="13" font-weight="bold" fill="#B23A3A">Svageste underdimension</text>
+<text x="866" y="562" text-anchor="start" font-family="Arial" font-size="12" fill="#425571">Dataklassifikation står på 3 og vejer 15%. Den driver</text>
+<text x="866" y="579" text-anchor="start" font-family="Arial" font-size="12" fill="#425571">gæld mod både AI og Cloud - to koblinger, én årsag.</text>
+<text x="866" y="650" text-anchor="start" font-family="Arial" font-size="12" font-weight="bold" fill="#B23A3A">Skjult af gennemsnittet</text>
+<rect x="840" y="688" width="504" height="172" rx="10" fill="#EDF1F7" stroke="#DDE3EC" stroke-width="1.3"/>
+<text x="866" y="720" text-anchor="start" font-family="Arial" font-size="13" font-weight="bold" fill="#14294A">Hvorfor spindelvæv her</text>
+<text x="866" y="746" text-anchor="start" font-family="Arial" font-size="12" fill="#425571">Inde i ét domæne er akserne underdimensioner, og formen</text>
+<text x="866" y="763" text-anchor="start" font-family="Arial" font-size="12" fill="#425571">viser hvor skævt det står. På tværs af de fem domæner</text>
+<text x="866" y="780" text-anchor="start" font-family="Arial" font-size="12" fill="#425571">duer det ikke - der er koblingerne produktet, og dem kan</text>
+<text x="866" y="797" text-anchor="start" font-family="Arial" font-size="12" fill="#425571">en radar ikke tegne.</text>
+</svg>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#141C2B">
+<meta name="robots" content="noindex">
+<title>Klientområde - Looplo Custody</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#141C2B;--ink2:#1F2A3D;--copper:#C77D3A;--copper-lift:#D68C48;--paper:#F4F6F8;--white:#FFFFFF;--grey:#46505E;--grey2:#6B7685;--line:#D8DEE6;--good:#2F7D55;
+    --serif:"Source Serif 4",Georgia,serif;--sans:"Archivo",Arial,sans-serif;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--ink);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  a{color:var(--copper)}
+  header{border-bottom:1px solid #27344a}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .logo{font-weight:800;font-size:19px;color:var(--white);text-decoration:none}
+  .logo span{color:var(--copper)}
+  .back{font-size:14px;font-weight:600;color:#9AA6B6;text-decoration:none}
+  .back:hover{color:var(--white)}
+
+  /* Gate */
+  .gate{min-height:calc(100vh - 61px);display:grid;place-items:center;padding:48px 0}
+  .card{background:var(--white);border-radius:14px;padding:40px 34px;max-width:460px;width:100%;
+    box-shadow:0 30px 80px -40px rgba(0,0,0,.6)}
+  .lockmark{width:40px;height:40px;color:var(--copper);margin-bottom:18px}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--copper);margin:0 0 10px}
+  h1{font-family:var(--sans);font-size:1.7rem;font-weight:800;margin:0 0 12px;letter-spacing:-.01em;line-height:1.15}
+  .tease{color:var(--grey);margin:0 0 24px}
+  .tease b{color:var(--ink)}
+  label{display:block;font-size:13px;font-weight:600;color:var(--grey);margin-bottom:7px}
+  input{width:100%;font-family:var(--sans);font-size:1rem;padding:13px 14px;border:1px solid var(--line);
+    border-radius:8px;background:var(--paper);color:var(--ink)}
+  input:focus{outline:2px solid var(--copper);outline-offset:1px;border-color:var(--copper)}
+  button{width:100%;margin-top:14px;font-family:var(--sans);font-weight:700;font-size:1rem;color:var(--ink);
+    background:var(--copper);border:0;border-radius:8px;padding:14px;cursor:pointer}
+  button:hover{background:var(--copper-lift)}
+  .msg{min-height:20px;margin:12px 0 0;font-size:14px;color:#B4432E}
+  .soft{margin:18px 0 0;font-size:13.5px;color:var(--grey2);line-height:1.5}
+  .soft a{font-weight:600}
+
+  /* Inside */
+  .inside{display:none;background:var(--paper);color:var(--ink);min-height:calc(100vh - 61px)}
+  .inside.on{display:block}
+  .inside .wrap{padding-top:52px;padding-bottom:64px}
+  .inside .eyebrow{color:var(--copper)}
+  .inside h2{font-size:2rem;font-weight:800;margin:.3rem 0 14px;letter-spacing:-.01em}
+  .inside .lead{color:var(--grey);max-width:60ch;font-size:1.08rem;margin:0 0 30px}
+  .btn{display:inline-block;background:var(--ink);color:var(--white);text-decoration:none;font-weight:700;
+    padding:14px 26px;border-radius:8px;font-size:1rem}
+  .btn:hover{background:var(--ink2)}
+  .list{list-style:none;padding:0;margin:30px 0 0;max-width:62ch}
+  .list li{position:relative;padding:14px 0 14px 24px;border-top:1px solid var(--line);color:var(--ink)}
+  .list li:last-child{border-bottom:1px solid var(--line)}
+  .list li::before{content:"";position:absolute;left:0;top:1.35em;width:9px;height:2px;background:var(--copper)}
+  .list b{font-weight:700}
+  .note{margin-top:30px;font-family:var(--serif);font-size:1.05rem;color:var(--ink);max-width:54ch;border-left:3px solid var(--copper);padding-left:18px}
+  footer{padding:26px 0;color:#7E8B9C;font-size:13.5px;border-top:1px solid #27344a}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">Looplo<span>.</span></a>
+    <a class="back" href="index.html">&#8249; Til forsiden</a>
+  </div>
+</header>
+
+<!-- Soft gate -->
+<div class="gate" id="gate">
+  <div class="card">
+    <svg class="lockmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+    <p class="eyebrow">Klientområde</p>
+    <h1>For jer, der er i gang med Custody</h1>
+    <p class="tease">Bag her ligger <b>det fulde materiale</b>: hele dashboardet, arkitekturen bag, og jeres egen måling. Det, forsiden kun viser et billede af.</p>
+    <label for="code">Adgangskode</label>
+    <input id="code" type="password" autocomplete="off" placeholder="Indtast kode" aria-describedby="msg">
+    <button id="go">Luk op</button>
+    <p class="msg" id="msg"></p>
+    <p class="soft">Blød adgang til klienter. Har du ikke en kode, så skriv til <a href="mailto:jacob@falkentorp.dk">Jacob</a>, så får du en.</p>
+  </div>
+</div>
+
+<!-- Behind the gate -->
+<div class="inside" id="inside">
+  <div class="wrap">
+    <p class="eyebrow">Klientområde</p>
+    <h2>Velkommen tilbage</h2>
+    <p class="lead">Her er laget under forsiden. Hvor forsiden viser hvad Custody er, ligger her hvordan det er bygget, og jeres egen måling når den er sat op.</p>
+    <a class="btn" href="https://looplo.com/index.html#custody" target="_blank" rel="noopener">Åbn det fulde Custody-materiale</a>
+    <ul class="list">
+      <li><b>Hele dashboardet</b>, felt for felt, med jeres egne domæner</li>
+      <li><b>Arkitekturen bag</b> - kontekst, containere og attestation-flow (C4)</li>
+      <li><b>Bevis, ikke påstand</b> - hvordan nøglen først frigives, når koden har bevist sin integritet</li>
+      <li><b>White papers</b> - Nordic Trust Layer og det tekniske fundament</li>
+      <li><b>Jeres egen måling</b> - modenhed, takt og footholds, opdateret over tid</li>
+    </ul>
+    <p class="note">Forsiden sælger billedet. Her ligger beviset bag det.</p>
+  </div>
+  <footer><div class="wrap">Looplo Custody &middot; klientområde &middot; blød adgang</div></footer>
+</div>
+
+<script>
+  (function(){
+    var CODE = "custody";              /* blød kode - skift frit, deles med klienter */
+    var KEY = "looplo_klient_ok";
+    var gate = document.getElementById('gate');
+    var inside = document.getElementById('inside');
+    function open(){ gate.style.display='none'; inside.classList.add('on'); }
+    try{ if(sessionStorage.getItem(KEY)==='1') open(); }catch(e){}
+    function attempt(){
+      var v = (document.getElementById('code').value||'').trim().toLowerCase();
+      if(v === CODE){ try{sessionStorage.setItem(KEY,'1');}catch(e){} open(); }
+      else { document.getElementById('msg').textContent = 'Koden passer ikke. Prøv igen, eller skriv til Jacob.'; }
+    }
+    document.getElementById('go').addEventListener('click', attempt);
+    document.getElementById('code').addEventListener('keydown', function(e){ if(e.key==='Enter') attempt(); });
+  })();
+</script>
+</body>
+</html>

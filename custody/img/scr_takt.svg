@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<rect width="1400" height="900" fill="#FBFBFC"/>
+<text x="56" y="52" text-anchor="start" font-family="Arial" font-size="13" font-weight="bold" fill="#3E5C76">2 · MÅLER</text>
+<text x="56" y="90" text-anchor="start" font-family="Arial" font-size="27" font-weight="bold" fill="#14294A">Takt · sync mellem domæner</text>
+<text x="56" y="118" text-anchor="start" font-family="Arial" font-size="14" fill="#425571">Indbyrdes afstand. Ude af takt er OK, hvis nogen har forberedt det. Rødt felt = koblingen er ved at knække.</text>
+<rect x="56" y="160" width="830" height="660" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.3"/>
+<text x="302.0" y="220" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#14294A">EA</text>
+<text x="418.0" y="220" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#14294A">ZT</text>
+<text x="534.0" y="220" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#14294A">CL</text>
+<text x="650.0" y="220" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#14294A">AI</text>
+<text x="766.0" y="220" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#14294A">EQ</text>
+<text x="234" y="281.0" text-anchor="end" font-family="Arial" font-size="13" font-weight="bold" fill="#14294A">Enterprise Arch.</text>
+<rect x="250" y="236" width="104" height="80" rx="6" fill="#E7ECF2"/>
+<text x="234" y="373.0" text-anchor="end" font-family="Arial" font-size="13" font-weight="bold" fill="#14294A">Zero Trust</text>
+<rect x="250" y="328" width="104" height="80" rx="6" fill="#2E7D4F"/>
+<text x="302.0" y="373.0" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">i trit</text>
+<rect x="366" y="328" width="104" height="80" rx="6" fill="#E7ECF2"/>
+<text x="234" y="465.0" text-anchor="end" font-family="Arial" font-size="13" font-weight="bold" fill="#14294A">Cloud</text>
+<rect x="250" y="420" width="104" height="80" rx="6" fill="#2E7D4F"/>
+<text x="302.0" y="465.0" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">i trit</text>
+<rect x="366" y="420" width="104" height="80" rx="6" fill="#E8A33D"/>
+<text x="418.0" y="465.0" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">substitut</text>
+<rect x="482" y="420" width="104" height="80" rx="6" fill="#E7ECF2"/>
+<text x="234" y="557.0" text-anchor="end" font-family="Arial" font-size="13" font-weight="bold" fill="#14294A">AI</text>
+<rect x="250" y="512" width="104" height="80" rx="6" fill="#E8A33D"/>
+<text x="302.0" y="557.0" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">substitut</text>
+<rect x="366" y="512" width="104" height="80" rx="6" fill="#E8A33D"/>
+<text x="418.0" y="557.0" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">substitut</text>
+<rect x="482" y="512" width="104" height="80" rx="6" fill="#2E7D4F"/>
+<text x="534.0" y="557.0" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">i trit</text>
+<rect x="598" y="512" width="104" height="80" rx="6" fill="#E7ECF2"/>
+<text x="234" y="649.0" text-anchor="end" font-family="Arial" font-size="13" font-weight="bold" fill="#14294A">Psyk. tryghed</text>
+<rect x="250" y="604" width="104" height="80" rx="6" fill="#B23A3A"/>
+<text x="302.0" y="649.0" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">uforberedt</text>
+<rect x="366" y="604" width="104" height="80" rx="6" fill="#E8A33D"/>
+<text x="418.0" y="649.0" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">substitut</text>
+<rect x="482" y="604" width="104" height="80" rx="6" fill="#E8A33D"/>
+<text x="534.0" y="649.0" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">substitut</text>
+<rect x="598" y="604" width="104" height="80" rx="6" fill="#B23A3A"/>
+<text x="650.0" y="649.0" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">uforberedt</text>
+<rect x="714" y="604" width="104" height="80" rx="6" fill="#E7ECF2"/>
+<rect x="300" y="788" width="18" height="18" rx="3" fill="#2E7D4F"/>
+<text x="325" y="802" text-anchor="start" font-family="Arial" font-size="13" fill="#425571">I trit eller forberedt</text>
+<rect x="500" y="788" width="18" height="18" rx="3" fill="#E8A33D"/>
+<text x="525" y="802" text-anchor="start" font-family="Arial" font-size="13" fill="#425571">Substitut aktiv</text>
+<rect x="700" y="788" width="18" height="18" rx="3" fill="#B23A3A"/>
+<text x="725" y="802" text-anchor="start" font-family="Arial" font-size="13" fill="#425571">Uforberedt</text>
+<rect x="910" y="160" width="434" height="210" rx="10" fill="#FBF3F2" stroke="#E4B4B0" stroke-width="1.4"/>
+<text x="936" y="194" text-anchor="start" font-family="Arial" font-size="14" font-weight="bold" fill="#B23A3A">To uforberedte afstande</text>
+<text x="936" y="222" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">EA mod EQ og AI mod EQ er begge røde. Der er</text>
+<text x="936" y="240" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">ikke aftalt noget interface mellem dem, og</text>
+<text x="936" y="258" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">afstanden bliver ikke mindre af sig selv.</text>
+<text x="936" y="346" text-anchor="start" font-family="Arial" font-size="13" font-weight="bold" fill="#B23A3A">Begge peger på EQ</text>
+<rect x="910" y="388" width="434" height="200" rx="10" fill="#FCF6EA" stroke="#EAC9A0" stroke-width="1.4"/>
+<text x="936" y="422" text-anchor="start" font-family="Arial" font-size="14" font-weight="bold" fill="#A5652C">Gul er ikke en fejl</text>
+<text x="936" y="450" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">Gul betyder at der køres bevidst på en</text>
+<text x="936" y="468" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">substitut. Det er en holdbar tilstand, så</text>
+<text x="936" y="486" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">længe nogen ved det og har sat en udløbsdato</text>
+<text x="936" y="504" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">på.</text>
+<rect x="910" y="606" width="434" height="214" rx="10" fill="#EDF1F7" stroke="#DDE3EC" stroke-width="1.3"/>
+<text x="936" y="640" text-anchor="start" font-family="Arial" font-size="14" font-weight="bold" fill="#14294A">Ude af takt kan være i orden</text>
+<text x="936" y="668" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">To domæner må gerne bevæge sig forskelligt</text>
+<text x="936" y="686" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">hurtigt. Det er kun et problem, når de er</text>
+<text x="936" y="704" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">koblet og ingen har forberedt afstanden.</text>
+</svg>

@@ -30,7 +30,7 @@
   .wrap{max-width:720px;margin:0 auto;padding:0 24px}
 
   /* Masthead */
-  header{padding:64px 0 40px}
+  header{padding:30px 0 28px}
   .brand{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk";font-weight:600;font-size:15px;letter-spacing:.01em}
   .mark{width:11px;height:11px;border-radius:50%;background:var(--dot);flex:none}
   .wordmark{font-family:"Space Grotesk";font-weight:700;font-size:clamp(38px,8vw,60px);line-height:1.02;letter-spacing:-.02em;margin:26px 0 0}
@@ -63,7 +63,7 @@
   footer a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--dot);padding-bottom:1px}
 
   @media (max-width:520px){
-    header{padding:44px 0 32px}
+    header{padding:20px 0 22px}
     .post{padding-left:34px}
   }
   @media (prefers-reduced-motion:no-preference){
@@ -86,6 +86,7 @@
   .lp-right a{font-size:13px;font-weight:600;display:inline-flex;align-items:center}
   .lp-right a:hover{color:#141C2B}
   .lp-lang a{font-size:12px}
+  .lp-lang a.active{color:#C77D3A !important}
   .lp-lk{width:11px;height:11px;margin-right:5px;opacity:.6}
   .lp-hmenu{border-bottom:1px solid #D8DEE6;background:#fff}
   .lp-hmenu .lp-wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:52px;flex-wrap:wrap}
@@ -104,7 +105,7 @@
     <a class="lp-logo" href="../index.html">Looplo<span>.</span><sup>&#8482;</sup></a>
     <div class="lp-right">
       <span class="lp-grp"><a href="../klient.html"><svg class="lp-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Klient</a><a href="../partner.html"><svg class="lp-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Partner</a></span>
-      <span class="lp-grp lp-lang"><a href="#" onclick="skiftSprog();return false;">DA</a><a href="#" onclick="skiftSprog();return false;">EN</a></span>
+      <span class="lp-grp lp-lang"><a href="#" id="lpDa" onclick="saetSprog('da');return false;">DA</a><a href="#" id="lpEn" onclick="saetSprog('en');return false;">EN</a></span>
     </div>
   </div></div>
   <div class="lp-hmenu"><div class="lp-wrap">
@@ -125,7 +126,7 @@
     <h1 class="wordmark" id="wordmark">Kobling</h1>
     <p class="lede" id="lede">Værdi og risiko koncentrerer sig i koblingerne mellem domænerne - ikke inde i dem. Tanker herom, nyeste øverst.</p>
     <nav class="nav">
-      <a href="#" onclick="history.back();return false;" id="tilbage">&larr; Tilbage</a><span>·</span><a id="navKob">Kobling</a><span>·</span><a class="dim" href="ai.html" id="navAi">AI</a><span>·</span><a class="dim" href="#" onclick="skiftSprog();return false;" id="sprogskift">EN</a>
+      <a id="navKob">Kobling</a><span>·</span><a class="dim" href="ai.html" id="navAi">AI</a>
     </nav>
   </header>
 
@@ -148,6 +149,7 @@ function liUrl(u){u=String(u).trim();
   if(/^\d{15,25}$/.test(u))return 'https://www.linkedin.com/feed/update/urn:li:activity:'+u+'/';
   return u;}
 
+function saetSprog(l){ if(l!==lang) skiftSprog(); }
 function skiftSprog(){
   lang = (lang === "da") ? "en" : "da";
   var u = new URL(location.href);
@@ -159,13 +161,13 @@ function skiftSprog(){
 function tegn(){
   var t = TX[lang];
   document.documentElement.lang = lang;
+  var _da=document.getElementById("lpDa"),_en=document.getElementById("lpEn");
+  if(_da)_da.className=(lang==="da")?"active":""; if(_en)_en.className=(lang==="en")?"active":"";
   document.title = t.title;
   document.getElementById("wordmark").textContent = t.wm;
   document.getElementById("lede").textContent = t.lede;
-  document.getElementById("tilbage").innerHTML = t.back;
   document.getElementById("navKob").textContent = t.nk;
   document.getElementById("navAi").textContent = t.na;
-  document.getElementById("sprogskift").textContent = t.sw;
   var f = document.getElementById("foot");
   f.innerHTML = t.foot + '<a href="https://cal.com/jacobfalkentorp">cal.com/jacobfalkentorp</a>';
   // soeskendelink beholder sprogvalg

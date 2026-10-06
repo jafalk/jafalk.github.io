@@ -1,3 +1,4 @@
+<!doctype html>
 <!-- looplo.com/insights/ai.html - AI-FEED: kun opslag med ai:true. looplo.ai lander via /enterprise/ai-da.html og henviser hertil. -->
 <!-- Alle opslag redigeres i posts.js (delt kilde for begge feeds). -->
 <meta charset="utf-8">
@@ -5,7 +6,7 @@
 <title>Looplo - AI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 
 <style>
   :root{
@@ -63,7 +64,55 @@
     .post{padding-left:34px}
   }
   .post .ill{display:block;width:100%;height:auto;border-radius:10px;margin:12px 0 4px}
+
+  /* ── harmoniseret site-menu (scoped, lp-) ── */
+  .lp-topbar{position:sticky;top:0;z-index:100;background:rgba(244,246,248,.97);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);font-family:"Archivo",Arial,sans-serif}
+  .lp-topbar a{color:#46505E;text-decoration:none}
+  .lp-wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .lp-hbar{border-bottom:1px solid #D8DEE6}
+  .lp-hbar .lp-wrap{display:flex;align-items:center;justify-content:space-between;height:44px}
+  .lp-logo{font-weight:800;font-size:18px;letter-spacing:-.02em;color:#141C2B !important}
+  .lp-logo span{color:#C77D3A}
+  .lp-logo sup{font-size:.64em;font-weight:600;vertical-align:top;margin-left:1px}
+  .lp-right{display:flex;align-items:center}
+  .lp-grp{display:flex;align-items:center;gap:16px}
+  .lp-lang{gap:12px;padding-left:16px;margin-left:16px;border-left:1px solid #D8DEE6}
+  .lp-right a{font-size:13px;font-weight:600;display:inline-flex;align-items:center}
+  .lp-right a:hover{color:#141C2B}
+  .lp-lang a{font-size:12px}
+  .lp-lk{width:11px;height:11px;margin-right:5px;opacity:.6}
+  .lp-hmenu{border-bottom:1px solid #D8DEE6;background:#fff}
+  .lp-hmenu .lp-wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:52px;flex-wrap:wrap}
+  .lp-menu{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+  .lp-menu a{font-size:15px;font-weight:600;padding:14px 0;border-bottom:2px solid transparent}
+  .lp-menu a.active{color:#C77D3A !important;border-color:#C77D3A}
+  .lp-menu a.far{margin-left:auto}
+  .lp-menu a:hover{color:#141C2B}
+  .lp-cta{font-size:14px;font-weight:600;color:#fff !important;background:#141C2B;padding:9px 16px;border-radius:6px;white-space:nowrap}
+  @media(max-width:780px){.lp-cta{display:none}}
+  @media(max-width:600px){.lp-hmenu .lp-wrap{min-height:0;padding:10px 24px} .lp-menu{gap:14px 16px} .lp-menu a{font-size:13.5px;padding:4px 0} .lp-grp{gap:12px}}
 </style>
+
+<div class="lp-topbar">
+  <div class="lp-hbar"><div class="lp-wrap">
+    <a class="lp-logo" href="../index.html">Looplo<span>.</span><sup>&#8482;</sup></a>
+    <div class="lp-right">
+      <span class="lp-grp"><a href="../klient.html"><svg class="lp-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Klient</a><a href="../partner.html"><svg class="lp-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Partner</a></span>
+      <span class="lp-grp lp-lang"><a href="#" onclick="skiftSprog();return false;">DA</a><a href="#" onclick="skiftSprog();return false;">EN</a></span>
+    </div>
+  </div></div>
+  <div class="lp-hmenu"><div class="lp-wrap">
+    <nav class="lp-menu">
+      <a href="../index.html">Custody</a>
+      <a href="../ai.html">AI</a>
+      <a href="../green.html">Green</a>
+      <a href="../verify.html">Verify</a>
+      <a href="../peer.html">Peer</a>
+      <a href="kobling.html" class="far active">Insights</a>
+    </nav>
+    <a class="lp-cta" href="../index.html#kontakt">Book en gennemgang</a>
+  </div></div>
+</div>
 
 <div class="wrap">
   <header>

@@ -1,0 +1,153 @@
+<!-- looplo.com/insights/kobling.html - HOVEDFEED: ALLE opslag (inkl. AI). -->
+<!-- Alle opslag redigeres i posts.js (delt kilde for begge feeds). -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Looplo - Kobling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper:#EEF1EE;
+    --ink:#0F2E36;
+    --ink-soft:#3C5760;
+    --sage:#8FA9A6;
+    --dot:#C2791C;
+    --amber:#F0C988;
+    --rule:rgba(15,46,54,.14);
+    --thread:rgba(15,46,54,.18);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px}
+
+  /* Masthead */
+  header{padding:64px 0 40px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk";font-weight:600;font-size:15px;letter-spacing:.01em}
+  .mark{width:11px;height:11px;border-radius:50%;background:var(--dot);flex:none}
+  .wordmark{font-family:"Space Grotesk";font-weight:700;font-size:clamp(38px,8vw,60px);line-height:1.02;letter-spacing:-.02em;margin:26px 0 0}
+  .lede{color:var(--ink-soft);font-size:18px;max-width:44ch;margin:14px 0 0}
+  .nav{margin-top:26px;font-size:14px;color:var(--sage)}
+  .nav a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--dot);padding-bottom:1px}
+  .nav a.dim{color:var(--sage);border-bottom-color:var(--rule)}
+  .nav span{padding:0 10px;color:var(--rule)}
+
+  /* Thread */
+  main{padding-bottom:80px}
+  .thread{list-style:none;margin:0;padding:0;position:relative}
+  .thread::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1.5px;background:var(--thread)}
+  .post{position:relative;padding:0 0 40px 40px}
+  .node{position:absolute;left:0;top:6px;width:12px;height:12px;border-radius:50%;background:var(--dot);box-shadow:0 0 0 5px var(--paper)}
+  time{display:block;font-size:13px;color:var(--sage);font-variant-numeric:tabular-nums;margin-bottom:8px}
+  .post h2{font-family:"Space Grotesk";font-weight:600;font-size:21px;line-height:1.25;letter-spacing:-.01em;margin:0 0 8px}
+  .post p{margin:0 0 12px;color:var(--ink-soft);font-size:16.5px}
+  .tags{font-size:13px;color:var(--sage)}
+  .read{display:inline-block;margin-top:4px;font-size:14.5px;color:var(--ink);text-decoration:none;font-weight:500;border-bottom:1.5px solid var(--dot);padding-bottom:1px}
+  .read:hover{color:var(--dot)}
+
+  /* Hero (newest) */
+  .post.hero{padding-bottom:48px}
+  .post.hero h2{font-size:clamp(26px,5.5vw,34px);line-height:1.15}
+  .post.hero p{font-size:18px;color:var(--ink)}
+  .post.hero .node{width:15px;height:15px;top:5px;left:-1.5px}
+
+  footer{border-top:1px solid var(--rule);padding:28px 0 60px;color:var(--sage);font-size:13.5px}
+  footer a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--dot);padding-bottom:1px}
+
+  @media (max-width:520px){
+    header{padding:44px 0 32px}
+    .post{padding-left:34px}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .node{transition:transform .2s ease}
+  }
+  .post .ill{display:block;width:100%;height:auto;border-radius:10px;margin:12px 0 4px}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="mark"></span>Looplo</div>
+    <h1 class="wordmark" id="wordmark">Kobling</h1>
+    <p class="lede" id="lede">Værdi og risiko koncentrerer sig i koblingerne mellem domænerne - ikke inde i dem. Tanker herom, nyeste øverst.</p>
+    <nav class="nav">
+      <a href="#" onclick="history.back();return false;" id="tilbage">&larr; Tilbage</a><span>·</span><a id="navKob">Kobling</a><span>·</span><a class="dim" href="ai.html" id="navAi">AI</a><span>·</span><a class="dim" href="#" onclick="skiftSprog();return false;" id="sprogskift">EN</a>
+    </nav>
+  </header>
+
+  <main>
+    <ol class="thread" id="feed" aria-label="Seneste opslag"></ol>
+  </main>
+
+  <footer id="foot">
+    ● Jacob Falkentorp - Looplo. Fuld white paper mod en kaffe: <a href="https://cal.com/jacobfalkentorp">cal.com/jacobfalkentorp</a>
+  </footer>
+</div>
+
+<script src="posts.js?v=10"></script>
+<script>
+var TX = {"da": {"wm": "Kobling", "lede": "Værdi og risiko koncentrerer sig i koblingerne mellem domænerne - ikke inde i dem. Tanker herom, nyeste øverst.", "back": "&larr; Tilbage", "nk": "Kobling", "na": "AI", "foot": "● Jacob Falkentorp - Looplo. Fuld white paper mod en kaffe: ", "sw": "EN", "read": "Læs på LinkedIn", "title": "Looplo - Kobling"}, "en": {"wm": "Coupling", "lede": "Value and risk concentrate in the couplings between domains, not inside them. Notes on that, newest first.", "back": "&larr; Back", "nk": "Coupling", "na": "AI", "foot": "● Jacob Falkentorp - Looplo. Full white paper over a coffee: ", "sw": "DA", "read": "Read the original on LinkedIn (Danish)", "title": "Looplo - Coupling"}};
+var lang = (new URLSearchParams(location.search).get("lang") === "en") ? "en" : "da";
+
+function liUrl(u){u=String(u).trim();
+  if(/^https?:\/\//i.test(u))return u;
+  if(/^\d{15,25}$/.test(u))return 'https://www.linkedin.com/feed/update/urn:li:activity:'+u+'/';
+  return u;}
+
+function skiftSprog(){
+  lang = (lang === "da") ? "en" : "da";
+  var u = new URL(location.href);
+  if (lang === "en") u.searchParams.set("lang","en"); else u.searchParams.delete("lang");
+  history.replaceState(null,"",u);
+  tegn();
+}
+
+function tegn(){
+  var t = TX[lang];
+  document.documentElement.lang = lang;
+  document.title = t.title;
+  document.getElementById("wordmark").textContent = t.wm;
+  document.getElementById("lede").textContent = t.lede;
+  document.getElementById("tilbage").innerHTML = t.back;
+  document.getElementById("navKob").textContent = t.nk;
+  document.getElementById("navAi").textContent = t.na;
+  document.getElementById("sprogskift").textContent = t.sw;
+  var f = document.getElementById("foot");
+  f.innerHTML = t.foot + '<a href="https://cal.com/jacobfalkentorp">cal.com/jacobfalkentorp</a>';
+  // soeskendelink beholder sprogvalg
+  var q = (lang === "en") ? "?lang=en" : "";
+  var nk = document.getElementById("navKob"), na = document.getElementById("navAi");
+  if (nk.getAttribute("href")) nk.setAttribute("href","kobling.html"+q);
+  if (na.getAttribute("href")) na.setAttribute("href","ai.html"+q);
+
+  var fmt = new Intl.DateTimeFormat(lang === "en" ? "en-GB" : "da-DK",
+            { day:"numeric", month:"long", year:"numeric" });
+  var feed = document.getElementById("feed");
+  feed.innerHTML = "";
+  (window.POSTS || []).slice()
+    .sort(function(a,b){return new Date(b.date) - new Date(a.date);})
+    .forEach(function(p,i){
+      var li = document.createElement("li");
+      li.className = "post" + (i===0 ? " hero" : "");
+      li.innerHTML =
+        '<span class="node"></span>' +
+        '<time datetime="'+p.date+'">'+fmt.format(new Date(p.date))+'</time>' +
+        '<h2></h2>' +
+        (p.img ? '<img class="ill" src="'+p.img+'" alt="">' : '') +
+        '<p></p>' +
+        (p.tags ? '<div class="tags"></div>' : '') +
+        (p.url ? '<a class="read" href="'+liUrl(p.url)+'" target="_blank" rel="noopener">'+t.read+'</a>' : '');
+      li.querySelector("h2").textContent = (lang==="en" && p.en_title) ? p.en_title : p.title;
+      li.querySelector("p").textContent  = (lang==="en" && p.en_body)  ? p.en_body  : p.body;
+      if (p.tags) li.querySelector(".tags").textContent = p.tags;
+      feed.appendChild(li);
+    });
+}
+tegn();
+</script>

@@ -19,6 +19,16 @@
    ───────────────────────────────────────────────────────────── */
 window.POSTS = [
   {
+    date: "2026-10-04", ai: true,
+    title: "AI kill switch - lagt udenpå",
+    body: "NVIDIAs Open Agent Safety Platform lægger sandbox og hardware-watchdog udenom agenten. Men et lag udenpå kan begrænse hvad agenten når - ikke afgøre om en handling burde ske, for den kunde, på det mandat. Det kræver en levende verdensmodel, og den kobling mellem AI og EA ejer ingen. Uden den er kill switchen alt, der er tilbage - og den fejler kun i én retning: mod stop.",
+    tags: "#Looplo",
+    en_title: "AI kill switch - bolted on",
+    en_body: "NVIDIA's Open Agent Safety Platform wraps a sandbox and a hardware watchdog around the agent. But a layer bolted on can limit what the agent reaches - not decide whether an action should happen, for that client, on that mandate. That takes a living world model, and the coupling between AI and EA that no one owns. Without it, the kill switch is all that is left - and it fails in only one direction: toward stop.",
+    img: "",   // valgfri illustration
+    url: "7512537041453178880"
+  },
+  {
     date: "2026-09-29", ai: true,
     title: "Det sker allerede - når beslutningen bliver gratis, siver den ned i koblingerne",
     body: "Debatten siger, at når analysen bliver gratis, flytter værdien til at se sammenhængen. Rigtigt - men der er en stille halvdel: når selve beslutningen også bliver gratis, flytter den ikke op til dømmekraften. Den siver ned i koblingerne, hvor ingen ejer den.",

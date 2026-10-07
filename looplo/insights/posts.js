@@ -25,7 +25,7 @@ window.POSTS = [
     tags: "#Looplo",
     en_title: "AI kill switch - bolted on",
     en_body: "NVIDIA's Open Agent Safety Platform wraps a sandbox and a hardware watchdog around the agent. But a layer bolted on can limit what the agent reaches - not decide whether an action should happen, for that client, on that mandate. That takes a living world model, and the coupling between AI and EA that no one owns. Without it, the kill switch is all that is left - and it fails in only one direction: toward stop.",
-    img: "",   // valgfri illustration
+    img: "billeder/kill-switch.png",   // valgfri illustration
     url: "7512537041453178880"
   },
   {

@@ -115,13 +115,15 @@
 
 <div class="gate" id="gate">
   <div class="card">
-    <svg class="lockmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
     <p class="eyebrow">Partnerområde</p>
-    <h1>For partnere i et Looplo-projekt</h1>
-    <p class="tease">Bag her ligger <b>partnersporet</b>: både for jer, der sælger Looplo videre, og for jer, der er med i et Looplo-projekt. Materiale, onboarding og hvordan vi arbejder sammen.</p>
-    <label for="code">Adgangskode</label>
-    <input id="code" type="password" autocomplete="off" placeholder="Indtast kode" aria-describedby="msg">
-    <button id="go">Luk op</button>
+    <h1>Log ind</h1>
+    <p class="tease">Adgang til <b>partnersporet</b>: materiale, onboarding og hvordan vi arbejder sammen.</p>
+    <label for="navn">Navn</label>
+    <input id="navn" type="text" autocomplete="username" placeholder="Dit navn eller e-mail">
+    <label for="code" style="margin-top:14px">Adgangskode</label>
+    <input id="code" type="password" autocomplete="current-password" placeholder="Adgangskode" aria-describedby="msg">
+    <div style="text-align:right;margin:9px 0 2px;font-size:13.5px"><a href="mailto:partner@looplo.com?subject=Glemt%20adgangskode">Glemt adgangskode?</a></div>
+    <button id="go">Log ind</button>
     <p class="msg" id="msg"></p>
     <p class="soft">Blød adgang til partnere. Hvis du ikke har fået en, så skriv til os på <a href="mailto:partner@looplo.com">partner@looplo.com</a>.</p>
   </div>
@@ -159,7 +161,7 @@
       <a class="btn" href="https://cal.com/jacobfalkentorp">Book en partnersamtale</a>
     </div>
   </div>
-  <footer><div class="wrap">Looplo Custody &middot; partnerområde &middot; blød adgang &middot; udkast &middot; v2-0-0</div></footer>
+  <footer><div class="wrap">Looplo Custody &middot; partnerområde &middot; blød adgang &middot; udkast &middot; v2-1-0</div></footer>
 </div>
 
 <script>

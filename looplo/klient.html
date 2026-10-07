@@ -118,13 +118,15 @@
 <!-- Soft gate -->
 <div class="gate" id="gate">
   <div class="card">
-    <svg class="lockmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
     <p class="eyebrow">Klientområde</p>
-    <h1>For jer, der er i gang med Custody</h1>
-    <p class="tease">Bag her ligger <b>det fulde materiale</b>: hele dashboardet, arkitekturen bag, og jeres egen måling. Det, forsiden kun viser et billede af.</p>
-    <label for="code">Adgangskode</label>
-    <input id="code" type="password" autocomplete="off" placeholder="Indtast kode" aria-describedby="msg">
-    <button id="go">Luk op</button>
+    <h1>Log ind</h1>
+    <p class="tease">Adgang til <b>det fulde materiale</b>: hele dashboardet, arkitekturen bag, og jeres egen måling.</p>
+    <label for="navn">Navn</label>
+    <input id="navn" type="text" autocomplete="username" placeholder="Dit navn eller e-mail">
+    <label for="code" style="margin-top:14px">Adgangskode</label>
+    <input id="code" type="password" autocomplete="current-password" placeholder="Adgangskode" aria-describedby="msg">
+    <div style="text-align:right;margin:9px 0 2px;font-size:13.5px"><a href="mailto:client@looplo.com?subject=Glemt%20adgangskode">Glemt adgangskode?</a></div>
+    <button id="go">Log ind</button>
     <p class="msg" id="msg"></p>
     <p class="soft">Blød adgang til klienter. Hvis du ikke har fået en, så skriv til os på <a href="mailto:client@looplo.com">client@looplo.com</a>.</p>
   </div>
@@ -146,7 +148,7 @@
     </ul>
     <p class="note">Forsiden sælger billedet. Her ligger beviset bag det.</p>
   </div>
-  <footer><div class="wrap">Looplo Custody &middot; klientområde &middot; blød adgang &middot; v2-0-0</div></footer>
+  <footer><div class="wrap">Looplo Custody &middot; klientområde &middot; blød adgang &middot; v2-1-0</div></footer>
 </div>
 
 <script>

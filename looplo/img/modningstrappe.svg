@@ -1,0 +1,88 @@
+<!-- Looplo kerne-IP · Looplo_modningstrappe.svg · v1-0-0 · 2026-08-22 · kilde: se VERSION_kerne_ip.md -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1160" viewBox="0 0 1560 1160">
+<rect width="1560" height="1160" fill="#FFFFFF"/>
+<defs>
+<marker id="a6B7685" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6B7685"/></marker>
+<marker id="aC77D3A" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#C77D3A"/></marker>
+<marker id="aD0342C" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D0342C"/></marker>
+<marker id="a2E7D4F" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2E7D4F"/></marker>
+<marker id="a8A94A3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8A94A3"/></marker><marker id="a3E5C76" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#3E5C76"/></marker></defs>
+<text x="60" y="54" font-family="Georgia" font-size="31" font-weight="bold" fill="#141C2B">Modningstrappen</text>
+<text x="60" y="83" font-family="Arial" font-size="14.5" fill="#6B7685">Kunden købes ind på trin 2, hvor smerten er. Trin 1 leveres som forudsætning. Målet er trin 4, hvor Looplo fylder mindre.</text>
+<rect x="46" y="106" width="1468" height="46" rx="6" fill="#F6EFE6" stroke="#C77D3A" stroke-width="1.6"/>
+<text x="66" y="126" font-family="Arial" font-size="13" font-weight="bold" fill="#C77D3A">ALLE KUNDERS PAIN: den regulatoriske ramme og verifikation af LLM-output</text>
+<text x="66" y="144" font-family="Arial" font-size="12" fill="#6B7685">Det er dét de beder om. Koblingsmåling er dét de har brug for. Trappen forbinder de to.</text>
+<rect x="46" y="176" width="1468" height="122" rx="6" fill="#FFFFFF" stroke="#8A94A3" stroke-width="2"/>
+<rect x="46" y="176" width="7" height="122" fill="#8A94A3"/>
+<rect x="76" y="194" width="80" height="26" rx="3" fill="#8A94A3"/>
+<text x="116" y="212" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">Trin 0</text>
+<text x="172" y="214" font-family="Georgia" font-size="19" font-weight="bold" fill="#141C2B">Kaos og smerte</text>
+<text x="76" y="242" font-family="Arial" font-size="12.5" fill="#6B7685">Agenter træffer beslutninger. Ingen ved hvor mange, i hvilket sprog eller mod hvilken standard. Efterbehandlingen</text>
+<text x="76" y="260" font-family="Arial" font-size="12.5" fill="#6B7685">vokser lineært med brugen.</text>
+<text x="76" y="282" font-family="Arial" font-size="12.3" font-weight="bold" fill="#8A94A3">Kunden mærker det. Kunden kan ikke navngive det.</text>
+<line x1="1104" y1="190" x2="1104" y2="284" stroke="#8A94A3" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="1128" y="210" font-family="Arial" font-size="11.5" font-weight="bold" fill="#8A94A3">HONORARFORM</text>
+<text x="1128" y="232" font-family="Arial" font-size="13" font-weight="bold" fill="#141C2B">Intet</text>
+<rect x="46" y="312" width="1468" height="122" rx="6" fill="#FFFFFF" stroke="#3E5C76" stroke-width="2"/>
+<rect x="46" y="312" width="7" height="122" fill="#3E5C76"/>
+<rect x="76" y="330" width="80" height="26" rx="3" fill="#3E5C76"/>
+<text x="116" y="348" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">Trin 1a</text>
+<text x="172" y="350" font-family="Georgia" font-size="19" font-weight="bold" fill="#141C2B">Custody uden installation</text>
+<text x="76" y="378" font-family="Arial" font-size="12.5" fill="#6B7685">Koblingerne kortlægges manuelt. Offentligt tilgængeligt materiale analyseres med ekstern model. Kundens eget materiale</text>
+<text x="76" y="396" font-family="Arial" font-size="12.5" fill="#6B7685">røres ikke.</text>
+<text x="76" y="418" font-family="Arial" font-size="12.3" font-weight="bold" fill="#3E5C76">Første måling kræver ingen installation og ingen adgang til fortrolige data.</text>
+<line x1="1104" y1="326" x2="1104" y2="420" stroke="#8A94A3" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="1128" y="346" font-family="Arial" font-size="11.5" font-weight="bold" fill="#8A94A3">HONORARFORM</text>
+<text x="1128" y="368" font-family="Arial" font-size="13" font-weight="bold" fill="#141C2B">Fastpris pr. kortlægning</text>
+<rect x="46" y="448" width="1468" height="122" rx="6" fill="#FFFFFF" stroke="#3E5C76" stroke-width="2"/>
+<rect x="46" y="448" width="7" height="122" fill="#3E5C76"/>
+<rect x="76" y="466" width="80" height="26" rx="3" fill="#3E5C76"/>
+<text x="116" y="484" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">Trin 1b</text>
+<text x="172" y="486" font-family="Georgia" font-size="19" font-weight="bold" fill="#141C2B">Custody med iboende model</text>
+<text x="76" y="514" font-family="Arial" font-size="12.5" fill="#6B7685">Instansen kører i kundens miljø. Mistral læser kundens dokumenter bag enklavegrænsen. Dataklassifikation afgør</text>
+<text x="76" y="532" font-family="Arial" font-size="12.5" fill="#6B7685">enklavens omfang.</text>
+<text x="76" y="554" font-family="Arial" font-size="12.3" font-weight="bold" fill="#3E5C76">Målingen bliver løbende og efterprøvelig. Nul bytes ud.</text>
+<line x1="1104" y1="462" x2="1104" y2="556" stroke="#8A94A3" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="1128" y="482" font-family="Arial" font-size="11.5" font-weight="bold" fill="#8A94A3">HONORARFORM</text>
+<text x="1128" y="504" font-family="Arial" font-size="13" font-weight="bold" fill="#141C2B">Abonnement pr. instans</text>
+<rect x="46" y="584" width="1468" height="122" rx="6" fill="#FFFFFF" stroke="#2E7D4F" stroke-width="2"/>
+<rect x="46" y="584" width="7" height="122" fill="#2E7D4F"/>
+<rect x="76" y="602" width="80" height="26" rx="3" fill="#2E7D4F"/>
+<text x="116" y="620" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">Trin 2</text>
+<text x="172" y="622" font-family="Georgia" font-size="19" font-weight="bold" fill="#141C2B">Verifikation med interim-lag</text>
+<text x="76" y="650" font-family="Arial" font-size="12.5" fill="#6B7685">Looplo leverer et arbejdsbegrebssæt med indbygget udløb. Verify sætter afkodningsgrænsen for agenterne. Rutine</text>
+<text x="76" y="668" font-family="Arial" font-size="12.5" fill="#6B7685">passerer med bevis.</text>
+<text x="76" y="690" font-family="Arial" font-size="12.3" font-weight="bold" fill="#2E7D4F">Fanger at et svar har gyldig FORM. Ikke at det er forretningsmæssigt rigtigt.</text>
+<line x1="1104" y1="598" x2="1104" y2="692" stroke="#8A94A3" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="1128" y="618" font-family="Arial" font-size="11.5" font-weight="bold" fill="#8A94A3">HONORARFORM</text>
+<text x="1128" y="640" font-family="Arial" font-size="13" font-weight="bold" fill="#141C2B">Volumen - og her er fælden</text>
+<rect x="46" y="720" width="1468" height="122" rx="6" fill="#FFFFFF" stroke="#C77D3A" stroke-width="2"/>
+<rect x="46" y="720" width="7" height="122" fill="#C77D3A"/>
+<rect x="76" y="738" width="80" height="26" rx="3" fill="#C77D3A"/>
+<text x="116" y="756" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">Trin 3</text>
+<text x="172" y="758" font-family="Georgia" font-size="19" font-weight="bold" fill="#141C2B">Kundens egen SWM tilføres</text>
+<text x="76" y="786" font-family="Arial" font-size="12.5" fill="#6B7685">Kundens forretningsbegreber bygges ind, gradvist. Looplo leverer strukturen: hvordan et begreb defineres, versioneres</text>
+<text x="76" y="804" font-family="Arial" font-size="12.5" fill="#6B7685">og får en ejer. Indholdet er kundens.</text>
+<text x="76" y="826" font-family="Arial" font-size="12.3" font-weight="bold" fill="#C77D3A">Nu fanger Verify at et svar er forkert, ikke kun at det er velformet.</text>
+<line x1="1104" y1="734" x2="1104" y2="828" stroke="#8A94A3" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="1128" y="754" font-family="Arial" font-size="11.5" font-weight="bold" fill="#8A94A3">HONORARFORM</text>
+<text x="1128" y="776" font-family="Arial" font-size="13" font-weight="bold" fill="#141C2B">Aftagende - med vilje</text>
+<rect x="46" y="856" width="1468" height="122" rx="6" fill="#FFFFFF" stroke="#2E7D4F" stroke-width="2"/>
+<rect x="46" y="856" width="7" height="122" fill="#2E7D4F"/>
+<rect x="76" y="874" width="80" height="26" rx="3" fill="#2E7D4F"/>
+<text x="116" y="892" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#FFFFFF">Trin 4</text>
+<text x="172" y="894" font-family="Georgia" font-size="19" font-weight="bold" fill="#141C2B">Verifikation udfases</text>
+<text x="76" y="922" font-family="Arial" font-size="12.5" fill="#6B7685">Når laget holder, er de fleste beslutninger rigtige ved konstruktion. Verifikationsbehovet falder. Kunden ejer</text>
+<text x="76" y="940" font-family="Arial" font-size="12.5" fill="#6B7685">standarden og kan slukke Custody uden at målingen dør.</text>
+<text x="76" y="962" font-family="Arial" font-size="12.3" font-weight="bold" fill="#2E7D4F">Byrden falder i stedet for at vokse. Det er hele løftet indfriet.</text>
+<line x1="1104" y1="870" x2="1104" y2="964" stroke="#8A94A3" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="1128" y="890" font-family="Arial" font-size="11.5" font-weight="bold" fill="#8A94A3">HONORARFORM</text>
+<text x="1128" y="912" font-family="Arial" font-size="13" font-weight="bold" fill="#141C2B">Lav volumen, høj tillid</text>
+<line x1="1494" y1="196" x2="1494" y2="962" stroke="#D0342C" stroke-width="2.4" marker-end="url(#aD0342C)"/>
+<text x="1486" y="594" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#D0342C" transform="rotate(-90 1486 594)">OMSÆTNING PR. KUNDE FALDER</text>
+<rect x="46" y="998" width="1468" height="86" rx="6" fill="#FBF0F0" stroke="#D0342C" stroke-width="2"/>
+<text x="76" y="1026" font-family="Arial" font-size="14" font-weight="bold" fill="#D0342C">Fælden: trappen er også en indtjeningstrappe - og den peger nedad</text>
+<text x="76" y="1048" font-family="Arial" font-size="12.5" fill="#6B7685">Trin 2 er høj volumen og løbende. Trin 4 er lav volumen. Modnes kunden, falder omsætningen - og Looplo får direkte økonomisk interesse i at kunden bliver stående på trin 2.</text>
+<text x="76" y="1068" font-family="Arial" font-size="12.5" font-weight="bold" fill="#141C2B">Prismodellen skal belønne modning. Ellers modsiger forretningen doktrinen - og det finder en skarp indkøber på tyve minutter.</text>
+<text x="1500" y="1116" text-anchor="end" font-family="Arial" font-size="11.5" fill="#8A94A3">Looplo · modningstrappen · v1-0-0 · 22. august 2026</text>
+</svg>

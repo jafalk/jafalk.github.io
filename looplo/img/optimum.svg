@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 880 560" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-labelledby="optTitel optBesk" class="optimum">
+  <title id="optTitel">De to regnskaber topper ikke samme sted</title>
+  <desc id="optBesk">To kurver over stigende investeringsniveau. Det økonomiske afkast topper tidligt og falder derefter.
+  Klimaeffekten topper senere. Mellem de to toppe ligger afvejningszonen, hvor hvert skridt køber mindre udledning
+  ved at give afkast fra sig. Efter klimatoppen falder begge kurver.</desc>
+
+  <defs>
+    <pattern id="skraa" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#141C2B" stroke-width="1" stroke-opacity=".13"/>
+    </pattern>
+    <style>
+      .lbl{font-family:"Archivo",Arial,sans-serif;font-size:18px;font-weight:600;letter-spacing:.06em}
+      .sub{font-family:"Archivo",Arial,sans-serif;font-size:15px;fill:#6B7685}
+            .axis{font-family:"Archivo",Arial,sans-serif;font-size:22px;letter-spacing:.11em;text-transform:uppercase}
+      .mark{font-family:"Archivo",Arial,sans-serif;font-size:24px;font-weight:700}
+      .tk{font-family:"Archivo",Arial,sans-serif;font-size:13px;fill:#4A5563}
+    </style>
+  </defs>
+
+  <!-- zoner -->
+  <rect x="386.3" y="62" width="340.3" height="386" fill="#C77D3A" fill-opacity=".07"/>
+  <rect x="726.6" y="62" width="113.4" height="386" fill="url(#skraa)"/>
+  <line x1="386.3" y1="62" x2="386.3" y2="448" stroke="#C77D3A" stroke-width="1" stroke-opacity=".5"/>
+  <line x1="726.6" y1="62" x2="726.6" y2="448" stroke="#141C2B" stroke-width="1" stroke-opacity=".22"/>
+
+  <!-- zonemærkater -->
+  <text class="lbl" fill="#A5652C" text-anchor="middle" x="556.4" y="44">AFVEJNINGSZONEN</text>
+  <text class="sub" text-anchor="middle" x="556.4" y="62">her købes udledning med afkast</text>
+  <text class="lbl" fill="#141C2B" text-anchor="end" x="840" y="44">OVER-INVESTERING</text>
+
+  <!-- grundlinje -->
+  <line x1="46" y1="448" x2="840" y2="448" stroke="#D8DEE6" stroke-width="1.5"/>
+
+  <!-- kurver -->
+  <path d="M 46.0 448.0 C 64.1 418.4, 123.1 305.4, 159.4 263.2 C 195.7 221.0, 236.6 205.1, 272.9 184.0 C 309.2 162.9, 350.0 136.8, 386.3 131.2 C 422.6 125.6, 463.4 136.8, 499.7 148.8 C 536.0 160.8, 576.8 182.1, 613.1 206.0 C 649.4 229.9, 690.3 265.3, 726.6 298.4 C 762.9 331.5, 821.9 394.5, 840.0 412.8" fill="none" stroke="#141C2B" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M 46.0 448.0 C 64.1 432.4, 123.1 375.2, 159.4 350.5 C 195.7 325.8, 236.6 311.9, 272.9 293.7 C 309.2 275.5, 350.0 253.0, 386.3 236.8 C 422.6 220.6, 463.4 205.1, 499.7 192.1 C 536.0 179.1, 576.8 165.3, 613.1 155.6 C 649.4 145.8, 690.3 133.8, 726.6 131.2 C 762.9 128.6, 821.9 138.0, 840.0 139.3" fill="none" stroke="#2F6B4F" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- optima -->
+  <circle cx="386.3" cy="131.2" r="8" fill="#FFFFFF" stroke="#141C2B" stroke-width="3"/>
+  <circle cx="726.6" cy="131.2" r="8" fill="#FFFFFF" stroke="#2F6B4F" stroke-width="3"/>
+  <text class="mark" fill="#141C2B" text-anchor="middle" x="386.3" y="111.2">bedst for økonomien</text>
+  <text class="mark" fill="#2F6B4F" text-anchor="middle" x="726.6" y="161.2">bedst for klimaet</text>
+
+  <!-- akseforklaring -->
+  <text class="axis" fill="#141C2B" x="46" y="44">Økonomisk afkast</text>
+  <text class="axis" fill="#2F6B4F" x="46" y="62">Reduceret udledning</text>
+  <text class="axis" fill="#6B7685" text-anchor="middle" x="443.0" y="544">Stigende investering →</text>
+<text class="tk" text-anchor="middle" x="46.0" y="476">ingen tiltag</text><text class="tk" text-anchor="middle" x="159.4" y="476">Looplo alene</text><text class="tk" text-anchor="middle" x="272.9" y="476"><tspan x="272.9">let</tspan><tspan x="272.9" dy="16">modernisering</tspan></text><text class="tk" text-anchor="middle" x="386.3" y="476"><tspan x="386.3">målrettet</tspan><tspan x="386.3" dy="16">nyanskaffelse</tspan></text><text class="tk" text-anchor="middle" x="499.7" y="476">regionflyt</text><text class="tk" text-anchor="middle" x="613.1" y="476"><tspan x="613.1">fuld</tspan><tspan x="613.1" dy="16">udskiftning</tspan></text><text class="tk" text-anchor="middle" x="726.6" y="476">grøn PPA</text><text class="tk" text-anchor="middle" x="840.0" y="476"><tspan x="840.0">total</tspan><tspan x="840.0" dy="16">ombygning</tspan></text>
+</svg>

@@ -19,6 +19,16 @@
    ───────────────────────────────────────────────────────────── */
 window.POSTS = [
   {
+    date: "2026-10-10", ai: true,
+    title: "Guardrails, ikke gates - man kan kun outsource det man har styr på",
+    body: "Alle har indført AI. Næsten ingen styrer det. Organisationerne mangler ikke governance - de har komitéer, politikker og audits nok; spørgsmålet er hvor den sidder. Som gates passeres styringen én gang, mens agenten bagefter handler tusind gange ubundet - en gate er ikke styring, men renten på en gæld ingen ejer. Kald det koblingsgæld. Governance der virker er et værn bygget ind i landing zonen: politik som kode, ikke et referat længere nede i flowet.",
+    tags: "#Looplo",
+    en_title: "Guardrails, not gates - you can only outsource what you have a handle on",
+    en_body: "Everyone has adopted AI. Almost no one governs it. Organisations are not short of governance - they have committees, policies and audits enough; the question is where it sits. As gates, control is passed once, while the agent then acts a thousand times unbound - a gate is not governance, but the interest on a debt no one owns. Call it coupling debt. Governance that works is a guardrail built into the landing zone: policy as code, not minutes further down the flow.",
+    img: "billeder/guardrails-ikke-gates.png",   // valgfri illustration
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7514678269791690752"
+  },
+  {
     date: "2026-10-04", ai: true,
     title: "AI kill switch - lagt udenpå",
     body: "NVIDIAs Open Agent Safety Platform lægger sandbox og hardware-watchdog udenom agenten. Men et lag udenpå kan begrænse hvad agenten når - ikke afgøre om en handling burde ske, for den kunde, på det mandat. Det kræver en levende verdensmodel, og den kobling mellem AI og EA ejer ingen. Uden den er kill switchen alt, der er tilbage - og den fejler kun i én retning: mod stop.",

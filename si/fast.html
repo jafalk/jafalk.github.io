@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kørt fast - Looplo SI</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="inner">
+    <a class="brand" href="index.html">Looplo <span class="si">SI</span></a>
+    <div class="navlinks">
+      <a href="fast.html" class="active">Kørt fast</a>
+      <a href="i-gang.html">I gang</a>
+      <a href="si-native.html">SI-native</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header class="hero">
+    <span class="eyebrow">Looplo SI &middot; Kørt fast</span>
+    <h1>Kom fri.</h1>
+    <p class="lede">Projektet driller. Intet kører i drift. Pengene løber. Vi får jer fri.</p>
+  </header>
+
+  <section>
+    <div class="lab">Lyder det som jer?</div>
+    <h2>Det kender<br>vi godt.</h2>
+    <div class="symlist">
+      <div class="symline"><span class="b">&bull;</span><span>Agenten virker i en demo. Ikke i drift.</span></div>
+      <div class="symline"><span class="b">&bull;</span><span>Ingen kan sige hvorfor den fejler.</span></div>
+      <div class="symline"><span class="b">&bull;</span><span>I har brugt mange penge. Lidt kom i mål.</span></div>
+      <div class="symline"><span class="b">&bull;</span><span>Leverandøren peger på jer. I peger på dem.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="lab">Sådan får vi jer fri</div>
+    <h2>Vi finder<br>bruddet.</h2>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Vi ser hvor det knækker</h3><p>Det sidder tit mellem agent, data og system.</p></div>
+      <div class="step"><div class="n">02</div><h3>Vi retter det</h3><p>Kun det der skal rettes. Ikke mere.</p></div>
+      <div class="step"><div class="n">03</div><h3>Vi gør det klar til drift</h3><p>Så det holder - også når det vokser.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="lab">Det får I</div>
+    <h2>Ro. Og<br>et projekt der kører.</h2>
+    <div class="gains">
+      <div class="gain"><h3>Det kører</h3><p>Endelig i drift.</p></div>
+      <div class="gain"><h3>Ro i maven</h3><p>I ved hvor I står.</p></div>
+      <div class="gain"><h3>I står stærkt</h3><p>Ledelsen ser det virke igen.</p></div>
+    </div>
+  </section>
+
+  <section style="border-top:none">
+    <div class="cta">
+      <div class="lab">Næste skridt</div>
+      <h2>Fortæl hvor<br>det driller.</h2>
+      <p>Så siger vi, om vi kan hjælpe - kort og ærligt.</p>
+      <div class="contact">
+        <span class="k">Skriv til</span>
+        <a href="mailto:jacob@falkentorp.dk">jacob@falkentorp.dk</a>
+        <button class="copybtn" type="button" data-copy="jacob@falkentorp.dk">Kopiér</button>
+      </div>
+    </div>
+    <div class="backrow"><a href="index.html">&larr; Tilbage til forsiden</a></div>
+  </section>
+
+  <footer>
+    <span>Looplo SI</span>
+    <span>København</span>
+    <span>looplo.si</span>
+  </footer>
+
+</div>
+
+<script>
+  document.querySelectorAll('.copybtn').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.getAttribute('data-copy');
+      function done(){var o=b.textContent;b.textContent='Kopieret';setTimeout(function(){b.textContent=o;},1400);}
+      function select(){try{var r=document.createRange();var s=document.createElement('span');
+        s.textContent=t;s.style.position='fixed';s.style.opacity='0';document.body.appendChild(s);
+        r.selectNode(s);var sel=window.getSelection();if(sel){sel.removeAllRanges();sel.addRange(r);}
+        setTimeout(function(){if(s.parentNode)s.parentNode.removeChild(s);},800);}catch(e){}}
+      try{if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(t).then(done).catch(select);}else{select();}
+      }catch(e){select();}
+    });
+  });
+</script>
+</body>
+</html>

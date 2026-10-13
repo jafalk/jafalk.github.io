@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SI-native - Looplo SI</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="inner">
+    <a class="brand" href="index.html">Looplo <span class="si">SI</span></a>
+    <div class="navlinks">
+      <a href="fast.html">Kørt fast</a>
+      <a href="i-gang.html">I gang</a>
+      <a href="si-native.html" class="active">SI-native</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header class="hero">
+    <span class="eyebrow">Looplo SI &middot; SI-native</span>
+    <h1>Byg<br>stærkt.</h1>
+    <p class="lede">Startup. Født SI-native, eller bygget på en SI-idé. Vi sikrer fundamentet holder.</p>
+  </header>
+
+  <section>
+    <div class="lab">Lyder det som jer?</div>
+    <h2>Alt hviler<br>på grunden.</h2>
+    <div class="symlist">
+      <div class="symline"><span class="b">&bull;</span><span>I bygger på AI fra dag ét.</span></div>
+      <div class="symline"><span class="b">&bull;</span><span>Alt afhænger af at fundamentet holder.</span></div>
+      <div class="symline"><span class="b">&bull;</span><span>I skal skalere. Uden at det knækker.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="lab">Sådan sikrer vi grunden</div>
+    <h2>Styr før<br>I vokser.</h2>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Vi ser koblingerne</h3><p>Før de bliver til gæld I slæber rundt på.</p></div>
+      <div class="step"><div class="n">02</div><h3>Vi gør fundamentet klar</h3><p>Til at vokse hurtigt, uden at briste.</p></div>
+      <div class="step"><div class="n">03</div><h3>I bygger stærkt</h3><p>Fra start. Ikke lappet sammen senere.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="lab">Det får I</div>
+    <h2>Fart der<br>holder.</h2>
+    <div class="gains">
+      <div class="gain"><h3>I skalerer trygt</h3><p>Grunden brister ikke under jer.</p></div>
+      <div class="gain"><h3>Investorer kan se det</h3><p>Fundamentet er bygget til at holde.</p></div>
+      <div class="gain"><h3>Fart uden brud</h3><p>I bygger hurtigt og sikkert.</p></div>
+    </div>
+  </section>
+
+  <section style="border-top:none">
+    <div class="cta">
+      <div class="lab">Næste skridt</div>
+      <h2>Fortæl hvad<br>I bygger.</h2>
+      <p>Så siger vi, hvordan fundamentet holder hele vejen - kort og ærligt.</p>
+      <div class="contact">
+        <span class="k">Skriv til</span>
+        <a href="mailto:jacob@falkentorp.dk">jacob@falkentorp.dk</a>
+        <button class="copybtn" type="button" data-copy="jacob@falkentorp.dk">Kopiér</button>
+      </div>
+    </div>
+    <div class="backrow"><a href="index.html">&larr; Tilbage til forsiden</a></div>
+  </section>
+
+  <footer>
+    <span>Looplo SI</span>
+    <span>København</span>
+    <span>looplo.si</span>
+  </footer>
+
+</div>
+
+<script>
+  document.querySelectorAll('.copybtn').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.getAttribute('data-copy');
+      function done(){var o=b.textContent;b.textContent='Kopieret';setTimeout(function(){b.textContent=o;},1400);}
+      function select(){try{var r=document.createRange();var s=document.createElement('span');
+        s.textContent=t;s.style.position='fixed';s.style.opacity='0';document.body.appendChild(s);
+        r.selectNode(s);var sel=window.getSelection();if(sel){sel.removeAllRanges();sel.addRange(r);}
+        setTimeout(function(){if(s.parentNode)s.parentNode.removeChild(s);},800);}catch(e){}}
+      try{if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(t).then(done).catch(select);}else{select();}
+      }catch(e){select();}
+    });
+  });
+</script>
+</body>
+</html>

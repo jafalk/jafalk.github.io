@@ -69,7 +69,7 @@
     display:grid; gap:4px; margin:30px 0 0; max-width:40ch}
   .hero-sub{margin:30px 0 0; color:#9AA6B6; max-width:54ch; font-size:1.05rem}
   .hero-cta{margin-top:34px; display:flex; flex-wrap:wrap; gap:14px; align-items:center}
-  .btn{display:inline-block; text-decoration:none; font-weight:700; font-size:1rem;
+  .btn{display:inline-block; text-decoration:none; font-weight:700; font-size:1rem; line-height:1.2;
     padding:14px 26px; border-radius:7px}
   .btn-primary{background:#E8731C; color:#fff}
   button.btn{border:0; cursor:pointer; font-family:var(--sans)}
@@ -78,6 +78,8 @@
   .btn-ghost:hover{border-color:var(--copper); color:var(--copper)}
   .btn-orange{background:#E8731C; color:#fff}
   .btn-orange:hover{background:#F2863A; color:#fff}
+  .btn-dark{background:var(--ink); color:#fff}
+  .btn-dark:hover{background:var(--ink2)}
   .wp-btns{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
 
   /* Sections */
@@ -236,7 +238,7 @@
     <p class="hero-sub">Custody gathers what today sits scattered across vendors into one overview you own and can take to the board. Not a tool you rent access to. One you hold.</p>
     <div class="hero-cta">
       <a class="btn btn-orange" href="https://cal.com/jacobfalkentorp">Book a walkthrough</a>
-      <button class="btn btn-orange" type="button" onclick="looploWP()">Get the material</button>
+      <button class="btn btn-ghost" type="button" onclick="looploWP()">Get the material</button>
     </div>
   </div>
 </section>
@@ -424,7 +426,7 @@
         <p>Couplings and Enterprise AI - white papers and exec summaries. Sign up and we will send them.</p>
       </div>
       <div class="wp-btns">
-        <button class="btn btn-primary" type="button" onclick="looploWP()">Get the material</button>
+        <button class="btn btn-dark" type="button" onclick="looploWP()">Get the material</button>
         <a class="btn btn-orange" href="https://cal.com/jacobfalkentorp">Book a walkthrough</a>
       </div>
     </div>

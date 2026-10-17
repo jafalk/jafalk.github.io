@@ -19,6 +19,16 @@
    ───────────────────────────────────────────────────────────── */
 window.POSTS = [
   {
+    date: "2026-10-16", ai: true,
+    title: "Alle så bilen flyve. Det vigtige gik den modsatte vej.",
+    body: "En Tesla hang på hovedet i et loop og lignede en raket. Men det, der holder den fast, er ikke flyvning - det er det modsatte: blæsere suger den ned mod banen, samme kraft som presser en racerbil fladt i et sving. Der er to systemer, ikke ét. Suget trækker ned, stille, og giver grebet. Thrusterne kaster op, højlydt - det alle filmede. Sådan er det tit: alle husker det, der flyver, de færreste ser det, der bærer. Det vigtige gemmer sig dér, hvor ingen kigger - i koblingen. Det samme gælder AI: det lærende gætter, det provbare bestemmer.",
+    tags: "#Looplo",
+    en_title: "Everyone watched the car fly. The important part went the other way.",
+    en_body: "A Tesla hung upside down in a loop and looked like a rocket. But what holds it there is not flight - it is the opposite: fans suck it down onto the track, the same force that presses a race car flat through a corner. There are two systems, not one. The suck pulls down, quietly, and gives the grip. The thrusters push up, loudly - the part everyone filmed. It is often like this: everyone remembers what flies, few see what carries. The important thing usually hides where no one looks - in the coupling. The same holds for AI: the learning one guesses, the provable one decides.",
+    img: "billeder/to-systemer.png",
+    url: "https://www.linkedin.com/feed/update/urn:li:activity:7516839469837119488"
+  },
+  {
     date: "2026-10-10", ai: true,
     title: "Guardrails, ikke gates - man kan kun outsource det man har styr på",
     body: "Alle har indført AI. Næsten ingen styrer det. Organisationerne mangler ikke governance - de har komitéer, politikker og audits nok; spørgsmålet er hvor den sidder. Som gates passeres styringen én gang, mens agenten bagefter handler tusind gange ubundet - en gate er ikke styring, men renten på en gæld ingen ejer. Kald det koblingsgæld. Governance der virker er et værn bygget ind i landing zonen: politik som kode, ikke et referat længere nede i flowet.",

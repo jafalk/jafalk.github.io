@@ -114,7 +114,9 @@ function visDownloads(valgte){
   var h=document.createElement('b');h.textContent=o.navn;box.appendChild(h);
   [[t.brief,'brief'],[t.udd,'uddybende']].forEach(function(p){
    var a=document.createElement('a');a.className='lsi-send';
-   a.href=BASE+'materiale/'+(lang==='en'?'en/':'')+'SI_'+k+'_'+p[1]+'.pdf';a.target='_blank';a.rel='noopener';
+   var _k=(lang==='en')?({'koert-fast':'stuck','i-gang':'get-going','si-native':'si-native'}[k]||k):k;
+   var _p=(lang==='en'&&p[1]==='uddybende')?'in-depth':p[1];
+   a.href=BASE+'materiale/'+(lang==='en'?'en/':'')+'SI_'+_k+'_'+_p+'.pdf';a.target='_blank';a.rel='noopener';
    a.textContent=p[0];box.appendChild(a);
   });
  });

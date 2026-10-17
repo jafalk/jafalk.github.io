@@ -114,7 +114,7 @@ function visDownloads(valgte){
   var h=document.createElement('b');h.textContent=o.navn;box.appendChild(h);
   [[t.brief,'brief'],[t.udd,'uddybende']].forEach(function(p){
    var a=document.createElement('a');a.className='lsi-send';
-   a.href=BASE+'materiale/SI_'+k+'_'+p[1]+'.pdf';a.target='_blank';a.rel='noopener';
+   a.href=BASE+'materiale/'+(lang==='en'?'en/':'')+'SI_'+k+'_'+p[1]+'.pdf';a.target='_blank';a.rel='noopener';
    a.textContent=p[0];box.appendChild(a);
   });
  });

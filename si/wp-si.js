@@ -8,10 +8,12 @@ var PUB="MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAkXtC2ve86glLlz4052w0Vj28S2z
 
 /* De tre saet. fil-stierne ligger i materiale/ ved siden af siden. */
 var SETS=[
- {k:"koert-fast", navn:"Kørt fast",  d:"Kom fri - projektet i drift igen"},
- {k:"i-gang",     navn:"I gang",     d:"Kom godt i gang - uden grøften"},
- {k:"si-native",  navn:"SI-native",  d:"Byg stærkt - fundamentet holder"}
+ {k:"koert-fast", navn:"Kørt fast",  navnEn:"Stuck",     d:"Kom fri - projektet i drift igen", dEn:"Get free - the project back in production"},
+ {k:"i-gang",     navn:"I gang",     navnEn:"Get going", d:"Kom godt i gang - uden grøften",    dEn:"Get going well - without the ditch"},
+ {k:"si-native",  navn:"SI-native",  navnEn:"SI-native", d:"Byg stærkt - fundamentet holder",   dEn:"Build strong - the foundation holds"}
 ];
+function setNavn(o){return lang==='en'?o.navnEn:o.navn;}
+function setDesc(o){return lang==='en'?o.dEn:o.d;}
 
 var T={
  da:{h:"Få materialet",s:"Vælg hvad I vil have. Vi sender det med det samme.",
@@ -66,7 +68,7 @@ function build(){
  if(built)return;built=true;
  var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
  var sh='';
- SETS.forEach(function(o){sh+='<label class="lsi-set"><input type="checkbox" class="lsi-set-cb" data-k="'+esc(o.k)+'"> <span><b>'+esc(o.navn)+'</b><span>'+esc(o.d)+'</span></span></label>';});
+ SETS.forEach(function(o){sh+='<label class="lsi-set"><input type="checkbox" class="lsi-set-cb" data-k="'+esc(o.k)+'"> <span><b>'+esc(setNavn(o))+'</b><span>'+esc(setDesc(o))+'</span></span></label>';});
  ov=document.createElement('div');ov.className='lsi-ov';
  ov.innerHTML='<div class="lsi-m" role="dialog" aria-modal="true"><div class="lsi-form">'
  +'<h3>'+esc(t.h)+'</h3><p class="lsi-sub">'+esc(t.s)+'</p>'
@@ -111,7 +113,7 @@ function visDownloads(valgte){
  var box=ov.querySelector('.lsi-dl');box.innerHTML='';
  valgte.forEach(function(k){
   var o=SETS.filter(function(s){return s.k===k;})[0];if(!o)return;
-  var h=document.createElement('b');h.textContent=o.navn;box.appendChild(h);
+  var h=document.createElement('b');h.textContent=setNavn(o);box.appendChild(h);
   [[t.brief,'brief'],[t.udd,'uddybende']].forEach(function(p){
    var a=document.createElement('a');a.className='lsi-send';
    var _k=(lang==='en')?({'koert-fast':'stuck','i-gang':'get-going','si-native':'si-native'}[k]||k):k;

@@ -1,17 +1,17 @@
 <?php
-/* looplo.com/modtag.php
+/* looplo.si/modtag.php
    Modtager en krypteret blob. Serveren kan IKKE laese indholdet.
    Kun indehaveren af den private noegle kan dekryptere.
    GET  = selvtest (viser om PHP koerer og hvor der kan skrives)
    POST = modtag blob */
 
 /* ---- KONFIGURATION ----
-   AFSENDER skal vaere en postkasse der FINDES paa det domaene serveren hoster (looplo.com).
-   Opret fx info@looplo.com hos one.com og saet den ind her. En adresse paa et ANDET domaene
-   (fx falkentorp.dk) bliver afvist af udbyderen. MODTAGER maa gerne ligge et andet sted. */
+   AFSENDER skal vaere en postkasse der FINDES paa det domaene serveren hoster (looplo.si).
+   Opret fx info@looplo.si hos one.com og saet den ind her. En adresse paa et ANDET domaene
+   (fx looplo.com eller falkentorp.dk) bliver afvist af udbyderen. MODTAGER maa gerne ligge et andet sted. */
 /* AFSENDER: lad staa TOM i foerste omgang - saa saetter serveren selv sin afsender,
    hvilket de fleste udbydere accepterer. Vil du bruge en egen adresse, skal den findes
-   som postkasse paa det domaene serveren hoster (fx info@looplo.com). */
+   som postkasse paa det domaene serveren hoster (fx info@looplo.si). */
 define('AFSENDER', '');
 define('MODTAGER', 'jacob@falkentorp.dk');
 /* HENTETOKEN: kraeves for at laese de krypterede blobs via ?hent=... .
@@ -166,7 +166,7 @@ fclose($fh);
 @chmod($f, 0600);
 
 $antal = @count(@file($f, FILE_SKIP_EMPTY_LINES));
-$krop  = "Der er modtaget en ny henvendelse via looplo.com.\n\n"
+$krop  = "Der er modtaget en ny henvendelse via looplo.si.\n\n"
        . "Tidspunkt: " . gmdate('Y-m-d H:i') . " UTC\n"
        . "I alt i koen: " . $antal . "\n\n"
        . "Indholdet er krypteret og fremgaar ikke af denne mail.\n"
@@ -178,9 +178,8 @@ $sendt = false; $brugt = '';
 
 $forsoeg = array(
     array('navn' => 'server-standard', 'hoved' => $ct,                                     'env' => null),
-    array('navn' => 'info@looplo.com', 'hoved' => "From: Looplo <info@looplo.com>\r\n" . $ct, 'env' => 'info@looplo.com'),
-    array('navn' => 'noreply@looplo.com', 'hoved' => "From: Looplo <noreply@looplo.com>\r\n" . $ct, 'env' => 'noreply@looplo.com'),
-    array('navn' => MODTAGER,           'hoved' => "From: Looplo <" . MODTAGER . ">\r\n" . $ct, 'env' => MODTAGER),
+    array('navn' => 'info@looplo.si', 'hoved' => "From: Looplo <info@looplo.si>\r\n" . $ct, 'env' => 'info@looplo.si'),
+    array('navn' => 'noreply@looplo.si', 'hoved' => "From: Looplo <noreply@looplo.si>\r\n" . $ct, 'env' => 'noreply@looplo.si'),
 );
 if (AFSENDER !== '') {
     array_unshift($forsoeg, array('navn' => AFSENDER,

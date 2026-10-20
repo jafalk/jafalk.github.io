@@ -1,0 +1,17 @@
+# looplo.com — tving HTTPS
+# Lægges i web-roden på one.com (samme mappe som looplo.com's index.html).
+# Sender al http-trafik videre til https med en permanent 301-redirect.
+
+RewriteEngine On
+
+# Hvis forbindelsen ikke er https (virker også bag one.com's proxy/load balancer),
+# redirect til samme URL på https.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Valgfrit: HSTS — fortæl browseren altid at bruge https fremover.
+# Slå først til når https er bekræftet at virke på alle sider.
+# <IfModule mod_headers.c>
+#   Header always set Strict-Transport-Security "max-age=31536000"
+# </IfModule>

@@ -23,7 +23,7 @@ var T={
      eSaet:"Vælg mindst ét sæt.",eMail:"Skriv en gyldig email.",
      eFejl:"Kunne ikke sende lige nu. Prøv igen senere.",
      okH:"Værsgo!",okS:"Her er dit materiale. Vi har også noteret din henvendelse.",
-     brief:"Brief (PDF)",udd:"Uddybende (PDF)",luk:"Luk"},
+     brief:"Brief (PDF)",udd:"Uddybende (PDF)",sec:"Krypteret i din browser og under forsendelse (https).",luk:"Luk"},
  en:{h:"Get the material",s:"Pick what you want. We send it right away.",
      vaelg:"Which sets do you want?",navn:"Name",mail:"Email",tel:"Phone",
      opt:"Name, email and phone are optional.",kontakt:"You may contact me",
@@ -31,7 +31,7 @@ var T={
      eSaet:"Choose at least one set.",eMail:"Enter a valid email.",
      eFejl:"Could not send right now. Please try again later.",
      okH:"Here you go!",okS:"Here is your material. We have also noted your request.",
-     brief:"Brief (PDF)",udd:"In-depth (PDF)",luk:"Close"}
+     brief:"Brief (PDF)",udd:"In-depth (PDF)",sec:"Encrypted in your browser and in transit (https).",luk:"Close"}
 };
 var lang=(document.documentElement.lang||"da").slice(0,2).toLowerCase();
 if(!T[lang])lang="da"; var t=T[lang];
@@ -79,6 +79,7 @@ function build(){
  +'<div class="lsi-f"><label>'+esc(t.tel)+'</label><input type="tel" class="lsi-tel" autocomplete="tel"></div>'
  +'<p class="lsi-hint">'+esc(t.opt)+'</p>'
  +'<label class="lsi-c"><input type="checkbox" class="lsi-kontakt"> <span>'+esc(t.kontakt)+'</span></label>'
+ +'<p class="lsi-sec" style="font-size:12px;color:#8a7d66;margin:10px 0 0">'+esc(t.sec)+'</p>'
  +'<p class="lsi-e"></p><div class="lsi-a"><button type="button" class="lsi-x">'+esc(t.annul)+'</button>'
  +'<button type="button" class="lsi-go">'+esc(t.send)+'</button></div></div>'
  +'<div class="lsi-ok"><h3>'+esc(t.okH)+'</h3><p class="lsi-sub">'+esc(t.okS)+'</p>'

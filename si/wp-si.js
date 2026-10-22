@@ -23,7 +23,7 @@ var T={
      eSaet:"Vælg mindst ét sæt.",eMail:"Skriv en gyldig email.",
      eFejl:"Kunne ikke sende lige nu. Prøv igen senere.",
      okH:"Værsgo!",okS:"Her er dit materiale. Vi har også noteret din henvendelse.",
-     brief:"Brief (PDF)",udd:"Uddybende (PDF)",sec:"Krypteret i din browser og under forsendelse (https).",luk:"Luk"},
+     brief:"Brief (PDF)",udd:"Uddybende (PDF)",sec:"End-to-end krypteret (AES-256 + RSA-4096). Serveren kan ikke læse indholdet.",luk:"Luk"},
  en:{h:"Get the material",s:"Pick what you want. We send it right away.",
      vaelg:"Which sets do you want?",navn:"Name",mail:"Email",tel:"Phone",
      opt:"Name, email and phone are optional.",kontakt:"You may contact me",
@@ -31,7 +31,7 @@ var T={
      eSaet:"Choose at least one set.",eMail:"Enter a valid email.",
      eFejl:"Could not send right now. Please try again later.",
      okH:"Here you go!",okS:"Here is your material. We have also noted your request.",
-     brief:"Brief (PDF)",udd:"In-depth (PDF)",sec:"Encrypted in your browser and in transit (https).",luk:"Close"}
+     brief:"Brief (PDF)",udd:"In-depth (PDF)",sec:"End-to-end encrypted (AES-256 + RSA-4096). The server cannot read the content.",luk:"Close"}
 };
 var lang=(document.documentElement.lang||"da").slice(0,2).toLowerCase();
 if(!T[lang])lang="da"; var t=T[lang];

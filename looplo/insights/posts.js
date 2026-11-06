@@ -25,7 +25,7 @@ window.POSTS = [
     tags: "#Looplo",
     en_title: "Strategic AI begins where the business case ends",
     en_body: "A board approves AI like everything else: one business case at a time. But the value and the risk of AI at scale rarely sit inside the single initiative - they sit in the unowned couplings between domains. The right board question is not how many initiatives are funded, but who owns the world-model the agents act on.",
-    img: "",
+    img: "billeder/strategisk-ai.png",
     url: "https://lnkd.in/p/eJtKEQNV"
   },
   {
@@ -45,7 +45,7 @@ window.POSTS = [
     tags: "#Looplo #Suverænitet #ZeroTrust #NIST",
     en_title: "Geoposition vs. near orbit - the difference is not technology, but who can close it",
     en_body: "Two kinds of satellites above us. Geoposition (GPS, Galileo, GLONASS) is a shared, redundant layer - no single owner can cut off access for the others. Near orbit (Starlink, Starshield) is a live connection with one owner who can turn it up, down or off. The shared layer was built once and shared; the single-owned one is now being built four times over. The difference is not technology - it is who can close it.",
-    img: "",
+    img: "billeder/geoposition.png",
     url: "https://lnkd.in/p/eB77nJWh"
   },
   {
@@ -55,7 +55,7 @@ window.POSTS = [
     tags: "#Looplo",
     en_title: "The AI stack does not fail in itself - it fails in the couplings out of it (2/2)",
     en_body: "The whole AI stack is only one column. The deepest risk is not between its own layers, but where the column must connect to everything else: the business, data ownership, security, the law, the people. A polished interface on top of an unowned foundation is still a gap. That is exactly the layer most forget to own.",
-    img: "",
+    img: "billeder/ai-stak-soejle.png",
     url: "https://lnkd.in/p/e4qjh-iB"
   },
   {
@@ -65,7 +65,7 @@ window.POSTS = [
     tags: "#Looplo",
     en_title: "An agentic LLM AI stack has six layers - the value sits in the couplings between them (1/2)",
     en_body: "A modern AI stack is layered: compute, data, models, retrieval, agents, app. Each layer solves its own task. But the value and the risk concentrate in the couplings between them - not inside any single layer. A wrong choice in one layer binds the whole stack to one vendor and one regime.",
-    img: "",
+    img: "billeder/ai-stak-seks-lag.png",
     url: "https://lnkd.in/p/epEpbpR2"
   },
   {

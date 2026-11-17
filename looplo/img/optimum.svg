@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg viewBox="0 0 880 560" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img"
      aria-labelledby="optTitel optBesk" class="optimum">
-  <title id="optTitel">De to regnskaber topper ikke samme sted</title>
-  <desc id="optBesk">To kurver over stigende investeringsniveau. Det økonomiske afkast topper tidligt og falder derefter.
-  Klimaeffekten topper senere. Mellem de to toppe ligger afvejningszonen, hvor hvert skridt køber mindre udledning
-  ved at give afkast fra sig. Efter klimatoppen falder begge kurver.</desc>
+  <title id="optTitel">The two ledgers don't peak in the same place</title>
+  <desc id="optBesk">Two curves over a rising level of investment. The financial return peaks early and then falls.
+  The climate effect peaks later. Between the two peaks lies the trade-off zone, where each step buys less emission
+  by giving up return. After the climate peak both curves fall.</desc>
 
   <defs>
     <pattern id="skraa" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
@@ -26,9 +26,9 @@
   <line x1="726.6" y1="62" x2="726.6" y2="448" stroke="#141C2B" stroke-width="1" stroke-opacity=".22"/>
 
   <!-- zonemærkater -->
-  <text class="lbl" fill="#A5652C" text-anchor="middle" x="556.4" y="44">AFVEJNINGSZONEN</text>
-  <text class="sub" text-anchor="middle" x="556.4" y="62">her købes udledning med afkast</text>
-  <text class="lbl" fill="#141C2B" text-anchor="end" x="840" y="44">OVER-INVESTERING</text>
+  <text class="lbl" fill="#A5652C" text-anchor="middle" x="556.4" y="44">TRADE-OFF ZONE</text>
+  <text class="sub" text-anchor="middle" x="556.4" y="62">here emissions are bought with returns</text>
+  <text class="lbl" fill="#141C2B" text-anchor="end" x="840" y="44">OVER-INVESTMENT</text>
 
   <!-- grundlinje -->
   <line x1="46" y1="448" x2="840" y2="448" stroke="#D8DEE6" stroke-width="1.5"/>
@@ -40,12 +40,12 @@
   <!-- optima -->
   <circle cx="386.3" cy="131.2" r="8" fill="#FFFFFF" stroke="#141C2B" stroke-width="3"/>
   <circle cx="726.6" cy="131.2" r="8" fill="#FFFFFF" stroke="#2F6B4F" stroke-width="3"/>
-  <text class="mark" fill="#141C2B" text-anchor="middle" x="386.3" y="111.2">bedst for økonomien</text>
-  <text class="mark" fill="#2F6B4F" text-anchor="middle" x="726.6" y="161.2">bedst for klimaet</text>
+  <text class="mark" fill="#141C2B" text-anchor="middle" x="386.3" y="111.2">best for the finances</text>
+  <text class="mark" fill="#2F6B4F" text-anchor="middle" x="726.6" y="161.2">best for the climate</text>
 
   <!-- akseforklaring -->
-  <text class="axis" fill="#141C2B" x="46" y="44">Økonomisk afkast</text>
-  <text class="axis" fill="#2F6B4F" x="46" y="62">Reduceret udledning</text>
-  <text class="axis" fill="#6B7685" text-anchor="middle" x="443.0" y="544">Stigende investering →</text>
-<text class="tk" text-anchor="middle" x="46.0" y="476">ingen tiltag</text><text class="tk" text-anchor="middle" x="159.4" y="476">Looplo alene</text><text class="tk" text-anchor="middle" x="272.9" y="476"><tspan x="272.9">let</tspan><tspan x="272.9" dy="16">modernisering</tspan></text><text class="tk" text-anchor="middle" x="386.3" y="476"><tspan x="386.3">målrettet</tspan><tspan x="386.3" dy="16">nyanskaffelse</tspan></text><text class="tk" text-anchor="middle" x="499.7" y="476">regionflyt</text><text class="tk" text-anchor="middle" x="613.1" y="476"><tspan x="613.1">fuld</tspan><tspan x="613.1" dy="16">udskiftning</tspan></text><text class="tk" text-anchor="middle" x="726.6" y="476">grøn PPA</text><text class="tk" text-anchor="middle" x="840.0" y="476"><tspan x="840.0">total</tspan><tspan x="840.0" dy="16">ombygning</tspan></text>
+  <text class="axis" fill="#141C2B" x="46" y="44">Financial return</text>
+  <text class="axis" fill="#2F6B4F" x="46" y="62">Reduced emissions</text>
+  <text class="axis" fill="#6B7685" text-anchor="middle" x="443.0" y="544">Increasing investment →</text>
+<text class="tk" text-anchor="middle" x="46.0" y="476">no action</text><text class="tk" text-anchor="middle" x="159.4" y="476">Looplo alone</text><text class="tk" text-anchor="middle" x="272.9" y="476"><tspan x="272.9">light</tspan><tspan x="272.9" dy="16">modernization</tspan></text><text class="tk" text-anchor="middle" x="386.3" y="476"><tspan x="386.3">targeted</tspan><tspan x="386.3" dy="16">new purchase</tspan></text><text class="tk" text-anchor="middle" x="499.7" y="476">region shift</text><text class="tk" text-anchor="middle" x="613.1" y="476"><tspan x="613.1">full</tspan><tspan x="613.1" dy="16">replacement</tspan></text><text class="tk" text-anchor="middle" x="726.6" y="476">green PPA</text><text class="tk" text-anchor="middle" x="840.0" y="476"><tspan x="840.0">total</tspan><tspan x="840.0" dy="16">rebuild</tspan></text>
 </svg>

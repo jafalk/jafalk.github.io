@@ -15,3 +15,7 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # <IfModule mod_headers.c>
 #   Header always set Strict-Transport-Security "max-age=31536000"
 # </IfModule>
+
+# Legacy: pre-swap English lived under /en/ — now served at root.
+# DA pages moved to /dk/.
+RewriteRule ^en/(.*)$ /$1 [R=301,L]

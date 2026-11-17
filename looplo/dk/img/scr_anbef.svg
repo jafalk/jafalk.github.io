@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<rect width="1400" height="900" fill="#FBFBFC"/>
+<text x="56" y="52" text-anchor="start" font-family="Arial" font-size="13" font-weight="bold" fill="#3E5C76">5 · UDLEDER</text>
+<text x="56" y="90" text-anchor="start" font-family="Arial" font-size="27" font-weight="bold" fill="#14294A">Anbefalinger, i rækkefølge</text>
+<text x="56" y="118" text-anchor="start" font-family="Arial" font-size="14" fill="#425571">Rækkefølgen følger hvor mange koblinger der låses op pr. krone, ikke hvor lav scoren er.</text>
+<rect x="56" y="160" width="1288" height="100" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.3"/>
+<circle cx="104" cy="210" r="20" fill="#2E7D4F"/>
+<text x="104" y="217" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#FFFFFF">1</text>
+<text x="148" y="198" text-anchor="start" font-family="Arial" font-size="16" font-weight="bold" fill="#14294A">Udpeg ejer på de fire ejerløse koblinger</text>
+<text x="148" y="222" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">ZT×AI, ZT×EQ, AI×EQ og CL×EQ har ingen ejer. Ejerskab er en direktionsbeslutning,</text>
+<text x="148" y="239" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">ikke et projekt.</text>
+<text x="1316" y="210" text-anchor="end" font-family="Arial" font-size="13" font-weight="bold" fill="#2E7D4F">Låser fire koblinger. Ingen udgift.</text>
+<rect x="56" y="272" width="1288" height="100" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.3"/>
+<circle cx="104" cy="322" r="20" fill="#2E7D4F"/>
+<text x="104" y="329" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#FFFFFF">2</text>
+<text x="148" y="310" text-anchor="start" font-family="Arial" font-size="16" font-weight="bold" fill="#14294A">Gennemfør dataklassifikation</text>
+<text x="148" y="334" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">Zero Trusts svageste dimension driver gæld mod både AI og Cloud. Seks til otte</text>
+<text x="148" y="351" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">workshops.</text>
+<text x="1316" y="322" text-anchor="end" font-family="Arial" font-size="13" font-weight="bold" fill="#2E7D4F">Forudsætning for tre andre træk.</text>
+<rect x="56" y="384" width="1288" height="100" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.3"/>
+<circle cx="104" cy="434" r="20" fill="#B23A3A"/>
+<text x="104" y="441" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#FFFFFF">3</text>
+<text x="148" y="422" text-anchor="start" font-family="Arial" font-size="16" font-weight="bold" fill="#14294A">Godkendelsesport for modellers dataadgang</text>
+<text x="148" y="446" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">Model governance står på 2 og vejer 20%. Porten skal gælde det der allerede kører,</text>
+<text x="148" y="463" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">ikke kun nyt.</text>
+<text x="1316" y="434" text-anchor="end" font-family="Arial" font-size="13" font-weight="bold" fill="#B23A3A">Fjerner den tungeste kritiske kobling.</text>
+<rect x="56" y="496" width="1288" height="100" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.3"/>
+<circle cx="104" cy="546" r="20" fill="#E8A33D"/>
+<text x="104" y="553" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#FFFFFF">4</text>
+<text x="148" y="534" text-anchor="start" font-family="Arial" font-size="16" font-weight="bold" fill="#14294A">Sæt mål for selvmeldte hændelser</text>
+<text x="148" y="558" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">Meldekultur står på 1 og vejer 30% af EQ. Målet er andelen af hændelser der meldes</text>
+<text x="148" y="575" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">af den der begik dem.</text>
+<text x="1316" y="546" text-anchor="end" font-family="Arial" font-size="13" font-weight="bold" fill="#E8A33D">Billigst i kroner, dyrest i mod.</text>
+<rect x="56" y="608" width="1288" height="100" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.3"/>
+<circle cx="104" cy="658" r="20" fill="#E8A33D"/>
+<text x="104" y="665" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#FFFFFF">5</text>
+<text x="148" y="646" text-anchor="start" font-family="Arial" font-size="16" font-weight="bold" fill="#14294A">Afprøv exit på én rigtig workload</text>
+<text x="148" y="670" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">Cloud scorer 5, men exit er aldrig prøvet. Vurderinger uden forsøg holder ikke i en</text>
+<text x="148" y="687" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">forhandling.</text>
+<text x="1316" y="658" text-anchor="end" font-family="Arial" font-size="13" font-weight="bold" fill="#E8A33D">Tre til fire ugers arbejde.</text>
+<rect x="56" y="720" width="1288" height="100" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.3"/>
+<circle cx="104" cy="770" r="20" fill="#3E5C76"/>
+<text x="104" y="777" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#FFFFFF">6</text>
+<text x="148" y="758" text-anchor="start" font-family="Arial" font-size="16" font-weight="bold" fill="#14294A">Fastlæg ét fælles begreb til ende</text>
+<text x="148" y="782" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">Semantisk lag vejer 25% af EA. Vælg det begreb der optræder i flest systemer, og lad</text>
+<text x="148" y="799" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">det være en kontrakt.</text>
+<text x="1316" y="770" text-anchor="end" font-family="Arial" font-size="13" font-weight="bold" fill="#3E5C76">Langsomt, men låser EA×AI.</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<rect width="1400" height="900" fill="#FBFBFC"/>
+<text x="56" y="52" text-anchor="start" font-family="Arial" font-size="13" font-weight="bold" fill="#3E5C76">3 · MÅLER</text>
+<text x="56" y="90" text-anchor="start" font-family="Arial" font-size="27" font-weight="bold" fill="#14294A">Koblingsgrad pr. kobling</text>
+<text x="56" y="118" text-anchor="start" font-family="Arial" font-size="14" fill="#425571">Tykkelse er koblingsgrad, farve er gæld. Knuderne er kontekst - koblingerne er produktet.</text>
+<rect x="56" y="160" width="830" height="660" rx="10" fill="#FFFFFF" stroke="#DDE3EC" stroke-width="1.3"/>
+<line x1="470" y1="250" x2="760" y2="430" stroke="#2E7D4F" stroke-width="7" stroke-linecap="round"/>
+<line x1="470" y1="250" x2="200" y2="430" stroke="#E8A33D" stroke-width="6" stroke-linecap="round"/>
+<line x1="470" y1="250" x2="300" y2="700" stroke="#14294A" stroke-width="15" stroke-linecap="round"/>
+<line x1="470" y1="250" x2="650" y2="700" stroke="#2E7D4F" stroke-width="7" stroke-linecap="round"/>
+<line x1="760" y1="430" x2="650" y2="700" stroke="#2E7D4F" stroke-width="9" stroke-linecap="round"/>
+<line x1="760" y1="430" x2="300" y2="700" stroke="#2E7D4F" stroke-width="6" stroke-linecap="round"/>
+<line x1="200" y1="430" x2="760" y2="430" stroke="#E8A33D" stroke-width="5" stroke-linecap="round" stroke-dasharray="16,12"/>
+<line x1="200" y1="430" x2="300" y2="700" stroke="#E8A33D" stroke-width="5" stroke-linecap="round" stroke-dasharray="16,12"/>
+<line x1="200" y1="430" x2="650" y2="700" stroke="#B23A3A" stroke-width="11" stroke-linecap="round" stroke-dasharray="16,12"/>
+<line x1="300" y1="700" x2="650" y2="700" stroke="#B23A3A" stroke-width="13" stroke-linecap="round"/>
+<circle cx="470" cy="250" r="46" fill="#FFFFFF" stroke="#14294A" stroke-width="2.4"/>
+<text x="470" y="248" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#14294A">EA</text>
+<text x="470" y="270" text-anchor="middle" font-family="Arial" font-size="12.5" fill="#7C8AA0">8 af 9</text>
+<circle cx="760" cy="430" r="46" fill="#FFFFFF" stroke="#14294A" stroke-width="2.4"/>
+<text x="760" y="428" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#14294A">CL</text>
+<text x="760" y="450" text-anchor="middle" font-family="Arial" font-size="12.5" fill="#7C8AA0">5 af 9</text>
+<circle cx="200" cy="430" r="46" fill="#FFFFFF" stroke="#14294A" stroke-width="2.4"/>
+<text x="200" y="428" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#14294A">EQ</text>
+<text x="200" y="450" text-anchor="middle" font-family="Arial" font-size="12.5" fill="#7C8AA0">2 af 9</text>
+<circle cx="300" cy="700" r="46" fill="#FFFFFF" stroke="#14294A" stroke-width="2.4"/>
+<text x="300" y="698" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#14294A">AI</text>
+<text x="300" y="720" text-anchor="middle" font-family="Arial" font-size="12.5" fill="#7C8AA0">4 af 9</text>
+<circle cx="650" cy="700" r="46" fill="#FFFFFF" stroke="#14294A" stroke-width="2.4"/>
+<text x="650" y="698" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#14294A">ZT</text>
+<text x="650" y="720" text-anchor="middle" font-family="Arial" font-size="12.5" fill="#7C8AA0">6 af 9</text>
+<rect x="110" y="788" width="18" height="18" rx="3" fill="#2E7D4F"/>
+<text x="135" y="802" text-anchor="start" font-family="Arial" font-size="13" fill="#425571">Ejet og bekræftet</text>
+<rect x="360" y="788" width="18" height="18" rx="3" fill="#E8A33D"/>
+<text x="385" y="802" text-anchor="start" font-family="Arial" font-size="13" fill="#425571">Forældet / uafklaret</text>
+<rect x="610" y="788" width="18" height="18" rx="3" fill="#B23A3A"/>
+<text x="635" y="802" text-anchor="start" font-family="Arial" font-size="13" fill="#425571">Ingen ejer, aktiv gæld</text>
+<rect x="910" y="160" width="434" height="300" rx="10" fill="#FBF3F2" stroke="#E4B4B0" stroke-width="1.4"/>
+<text x="936" y="194" text-anchor="start" font-family="Arial" font-size="14" font-weight="bold" fill="#B23A3A">Aflæsningen</text>
+<text x="936" y="222" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">Fire af fem domæner ligger på 4 eller</text>
+<text x="936" y="240" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">derover. Alligevel er ZT mod AI den tykkeste</text>
+<text x="936" y="258" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">røde kobling: høj afhængighed, ingen ejer.</text>
+<text x="936" y="346" text-anchor="start" font-family="Arial" font-size="13" font-weight="bold" fill="#B23A3A">Fire koblinger uden ejer</text>
+<text x="936" y="378" text-anchor="start" font-family="Arial" font-size="12" fill="#425571">De fire ejerløse: ZT×AI, ZT×EQ, AI×EQ og</text>
+<text x="936" y="395" text-anchor="start" font-family="Arial" font-size="12" fill="#425571">CL×EQ. Ejerskab er en signeret handling,</text>
+<text x="936" y="412" text-anchor="start" font-family="Arial" font-size="12" fill="#425571">ikke et felt.</text>
+<rect x="910" y="478" width="434" height="342" rx="10" fill="#EDF1F7" stroke="#DDE3EC" stroke-width="1.3"/>
+<text x="936" y="512" text-anchor="start" font-family="Arial" font-size="14" font-weight="bold" fill="#14294A">To gode domæner, dårlig kobling</text>
+<text x="936" y="540" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">Det billede viser en modenhedsscore aldrig.</text>
+<text x="936" y="558" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">Modenhedsløft i ét domæne købes hos en</text>
+<text x="936" y="576" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">domæneleverandør. Gæld i en kobling har ingen</text>
+<text x="936" y="594" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">leverandør, fordi den ligger mellem to</text>
+<text x="936" y="612" text-anchor="start" font-family="Arial" font-size="12.5" fill="#425571">kontrakter - og det er dér Custody måler.</text>
+</svg>

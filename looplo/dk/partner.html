@@ -122,7 +122,7 @@
     <input id="navn" type="text" autocomplete="username" placeholder="Dit navn eller e-mail">
     <label for="code" style="margin-top:14px">Adgangskode</label>
     <input id="code" type="password" autocomplete="current-password" placeholder="Adgangskode" aria-describedby="msg">
-    <div style="text-align:right;margin:9px 0 2px;font-size:13.5px"><a href="mailto:partner@looplo.com?subject=Glemt%20adgangskode">Glemt adgangskode?</a></div>
+    <div style="text-align:right;margin:9px 0 2px;font-size:13.5px"><a href="#" id="glemt">Glemt adgangskode?</a></div>
     <button id="go">Log ind</button>
     <p class="msg" id="msg"></p>
     <p class="soft">Blød adgang til partnere. Hvis du ikke har fået en, så skriv til os på <a href="mailto:partner@looplo.com">partner@looplo.com</a>.</p>
@@ -180,6 +180,40 @@
     document.getElementById('go').addEventListener('click', attempt);
     document.getElementById('code').addEventListener('keydown', function(e){ if(e.key==='Enter') attempt(); });
   })();
+</script>
+
+<script>
+/* Glemt adgangskode -> krypteret anmodning via modtag.php (ingen mailto). Samme kanal som wp.js. */
+(function(){
+  var PUB="MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAkXtC2ve86glLlz4052w0Vj28S2zvkq4M0/jDSF0SiQ439JyDFVtCvznJ83XV1g29INH2PTYaTyp0GxMt1F1+la1vCJfe+3Z1lJExMOt2+XD6ZPZZYfrJiPbgOOryyeVmtkdHfm2n+KzN/to+kDNu2b62eE30rC933tofJaJnTc0/rfX9MDg9N00o7L6XRnMLaoO0pqij5mhNlWBFWav1+yqcb90EEyYuFDo63GIQEZFX/ztQsOeFSzhd4VWL8G50U9hDkHhSraLket+XmsyVE2OVW3gBhgGaM69NnV/cEg/1W+pYRhMVwdsOzntK3jJAI68w8dMOVpzyS9rtWLzI50tw2Np9XSzxIoZBcHB4VY665+B1TVjh2jrZE/JWnRvmQLl6C1b3BVmkQv+vcBMh7oq0Lz36eqQzTbX+R/yya6uEpN5npdAm9B2nwE0iK9pAbeYmvT53VM92/SchG81u84qZe8u8rFpfrBqZUD9iRZapB5hz09sqLQ7oxEdqfPMVs6fZFeks+Cd/I7OVS3Oj+rnSBNzuBmFn6WSgPhHAc1aXR1EJCjf7DezWeFznMPpfq512KFCDmqUuohOjtmtECnvvef8yMFaMbu5m+JQ33n/tHWTGeuNT0nIrVVyZp6ERtLsBSnM0TaT/qLhSTx0BvXnWCf5hItQJMyN5gKbLuHUCAwEAAQ==";
+  var OMRAADE="partner";
+  var TXT={da:{tom:"Skriv dit navn eller e-mail \u00f8verst f\u00f8rst.",send:"Sender\u2026",ok:"Anmodning sendt \u2013 Jacob nulstiller koden og vender tilbage.",fejl:"Kunne ikke sende lige nu. Pr\u00f8v igen senere."},
+            en:{tom:"Enter your name or email above first.",send:"Sending\u2026",ok:"Request sent \u2013 Jacob will reset the code and get back to you.",fejl:"Could not send right now. Please try again later."}};
+  var lang=(document.documentElement.lang==="en")?"en":"da", tx=TXT[lang];
+  function b64b(b){var s=atob(b),u=new Uint8Array(s.length);for(var i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u.buffer;}
+  function bb64(b){var u=new Uint8Array(b),s="";for(var i=0;i<u.length;i++)s+=String.fromCharCode(u[i]);return btoa(s);}
+  async function send(obj){
+    var pt=new TextEncoder().encode(JSON.stringify(obj));
+    var k=await crypto.subtle.generateKey({name:"AES-GCM",length:256},true,["encrypt"]);
+    var iv=crypto.getRandomValues(new Uint8Array(12));
+    var ct=await crypto.subtle.encrypt({name:"AES-GCM",iv:iv},k,pt);
+    var pub=await crypto.subtle.importKey("spki",b64b(PUB),{name:"RSA-OAEP",hash:"SHA-256"},false,["encrypt"]);
+    var ek=await crypto.subtle.encrypt({name:"RSA-OAEP"},pub,await crypto.subtle.exportKey("raw",k));
+    var r=await fetch("modtag.php",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({ek:bb64(ek),iv:bb64(iv),ct:bb64(ct)})});
+    if(!r.ok)throw 0; var j=await r.json(); if(!j.ok)throw 0;
+  }
+  var link=document.getElementById("glemt"), msg=document.getElementById("msg");
+  if(link&&msg){link.addEventListener("click",function(e){
+    e.preventDefault();
+    var navn=((document.getElementById("navn")||{}).value||"").trim();
+    if(!navn){msg.style.color="#46505E";msg.textContent=tx.tom;var n=document.getElementById("navn");if(n)n.focus();return;}
+    link.style.pointerEvents="none";msg.style.color="#46505E";msg.textContent=tx.send;
+    send({type:"Glemt adgangskode",omraade:OMRAADE,navn:navn,sprog:lang,side:location.pathname,tid:new Date().toISOString()})
+      .then(function(){msg.style.color="#2F7D55";msg.textContent=tx.ok;})
+      .catch(function(){link.style.pointerEvents="";msg.style.color="";msg.textContent=tx.fejl;});
+  });}
+})();
 </script>
 </body>
 </html>

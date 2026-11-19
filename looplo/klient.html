@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#141C2B">
+<meta name="robots" content="noindex">
+<title>Client area - Looplo Custody</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#141C2B;--ink2:#1F2A3D;--copper:#C77D3A;--copper-lift:#D68C48;--paper:#F4F6F8;--white:#FFFFFF;--grey:#46505E;--grey2:#6B7685;--line:#D8DEE6;--good:#2F7D55;
+    --serif:"Source Serif 4",Georgia,serif;--sans:"Archivo",Arial,sans-serif;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--ink);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  a{color:var(--copper)}
+  header{position:sticky;top:0;z-index:50;background:rgba(244,246,248,.97);backdrop-filter:blur(6px)}
+  header .wrap{max-width:1080px}
+  .hbar{border-bottom:1px solid var(--line)}
+  .hbar .wrap{display:flex;align-items:center;justify-content:space-between;height:44px}
+  .logo{font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
+  .logo span{color:var(--copper)}
+  .logo .tm{font-size:.64em;font-weight:600;vertical-align:top;margin-left:1px;letter-spacing:0}
+  .top-right{display:flex;align-items:center}
+  .top-right .grp{display:flex;align-items:center;gap:16px}
+  .top-right .grp.lang{gap:12px;padding-left:16px;margin-left:16px;border-left:1px solid var(--line)}
+  .top-right a{font-size:13px;font-weight:600;color:var(--grey);text-decoration:none;display:inline-flex;align-items:center}
+  .top-right a:hover{color:var(--ink)}
+  .top-right .grp.lang a{font-size:12px}
+  .top-right .grp.lang a.active{color:var(--copper)}
+  .top-right .lk{width:11px;height:11px;margin-right:5px;opacity:.6}
+  .hmenu{border-bottom:1px solid var(--line);background:var(--white)}
+  .hmenu .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:52px;flex-wrap:wrap}
+  .mainmenu{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+  .mainmenu a{font-size:15px;font-weight:600;color:var(--grey);text-decoration:none;padding:14px 0;border-bottom:2px solid transparent}
+  .mainmenu a.active{color:var(--copper);border-color:var(--copper)}
+  .mainmenu a.far{margin-left:auto}
+  .mainmenu a:hover{color:var(--ink)}
+  .nav-cta{font-size:14px;font-weight:600;text-decoration:none;color:var(--white);background:var(--ink);padding:9px 16px;border-radius:6px;white-space:nowrap}
+  .nav-cta:hover{background:var(--ink2)}
+  @media(max-width:780px){.nav-cta{display:none}}
+  @media(max-width:600px){.hmenu .wrap{min-height:0;padding-top:10px;padding-bottom:10px} .mainmenu{gap:14px 16px} .mainmenu a{font-size:13.5px;padding:4px 0} .top-right .grp{gap:12px}}
+
+  /* Gate */
+  .gate{min-height:calc(100vh - 98px);display:grid;place-items:center;padding:48px 0}
+  .card{background:var(--white);border-radius:14px;padding:40px 34px;max-width:460px;width:100%;
+    box-shadow:0 30px 80px -40px rgba(0,0,0,.6)}
+  .lockmark{width:40px;height:40px;color:var(--copper);margin-bottom:18px}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--copper);margin:0 0 10px}
+  h1{font-family:var(--sans);font-size:1.7rem;font-weight:800;margin:0 0 12px;letter-spacing:-.01em;line-height:1.15}
+  .tease{color:var(--grey);margin:0 0 24px}
+  .tease b{color:var(--ink)}
+  label{display:block;font-size:13px;font-weight:600;color:var(--grey);margin-bottom:7px}
+  input{width:100%;font-family:var(--sans);font-size:1rem;padding:13px 14px;border:1px solid var(--line);
+    border-radius:8px;background:var(--paper);color:var(--ink)}
+  input:focus{outline:2px solid var(--copper);outline-offset:1px;border-color:var(--copper)}
+  button{width:100%;margin-top:14px;font-family:var(--sans);font-weight:700;font-size:1rem;color:var(--ink);
+    background:#C7703A;border:0;border-radius:8px;padding:14px;cursor:pointer}
+  button:hover{background:var(--copper-lift)}
+  .msg{min-height:20px;margin:12px 0 0;font-size:14px;color:#B4432E}
+  .soft{margin:18px 0 0;font-size:13.5px;color:var(--grey2);line-height:1.5}
+  .soft a{font-weight:600}
+
+  /* Inside */
+  .inside{display:none;background:var(--paper);color:var(--ink);min-height:calc(100vh - 98px)}
+  .inside.on{display:block}
+  .inside .wrap{padding-top:52px;padding-bottom:64px}
+  .inside .eyebrow{color:var(--copper)}
+  .inside h2{font-size:2rem;font-weight:800;margin:.3rem 0 14px;letter-spacing:-.01em}
+  .inside .lead{color:var(--grey);max-width:60ch;font-size:1.08rem;margin:0 0 30px}
+  .btn{display:inline-block;background:var(--ink);color:var(--white);text-decoration:none;font-weight:700;
+    padding:14px 26px;border-radius:8px;font-size:1rem}
+  .btn:hover{background:var(--ink2)}
+  .list{list-style:none;padding:0;margin:30px 0 0;max-width:62ch}
+  .list li{position:relative;padding:14px 0 14px 24px;border-top:1px solid var(--line);color:var(--ink)}
+  .list li:last-child{border-bottom:1px solid var(--line)}
+  .list li::before{content:"";position:absolute;left:0;top:1.35em;width:9px;height:2px;background:var(--copper)}
+  .list b{font-weight:700}
+  .note{margin-top:30px;font-family:var(--serif);font-size:1.05rem;color:var(--ink);max-width:54ch;border-left:3px solid var(--copper);padding-left:18px}
+  footer{padding:26px 0;color:#7E8B9C;font-size:13.5px;border-top:1px solid #27344a}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hbar">
+    <div class="wrap">
+      <a class="logo" href="index.html">Looplo<span>.</span><sup class="tm">&#8482;</sup></a>
+      <div class="top-right">
+        <span class="grp doors">
+          <a href="klient.html"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Klient</a>
+          <a href="partner.html"><svg class="lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Partner</a>
+        </span>
+        <span class="grp lang">
+          <a href="dk/index.html">DA</a>
+          <a href="index.html" class="active">EN</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="hmenu">
+    <div class="wrap">
+      <nav class="mainmenu">
+        <a href="index.html">Custody</a>
+        <a href="ai.html">AI</a>
+        <a href="green.html">Green</a>
+        <a href="verify.html">Verify</a>
+        <a href="peer.html">Peer</a>
+        <a href="dk/insights/kobling.html?lang=en" class="far">Insights</a>
+      </nav>
+      <a class="nav-cta" href="index.html#kontakt">Book a walkthrough</a>
+    </div>
+  </div>
+</header>
+
+<!-- Soft gate -->
+<div class="gate" id="gate">
+  <div class="card">
+    <p class="eyebrow">Client area</p>
+    <h1>Sign in</h1>
+    <p class="tease">Access to <b>the full material</b>: the whole dashboard, the architecture behind it, and your own measurement.</p>
+    <label for="navn">Name</label>
+    <input id="navn" type="text" autocomplete="username" placeholder="Your name or email">
+    <label for="code" style="margin-top:14px">Passcode</label>
+    <input id="code" type="password" autocomplete="current-password" placeholder="Passcode" aria-describedby="msg">
+    <div style="text-align:right;margin:9px 0 2px;font-size:13.5px"><a href="#" id="glemt">Forgot passcode?</a></div>
+    <button id="go">Sign in</button>
+    <p class="msg" id="msg"></p>
+    <p class="soft">Soft access for clients. If you haven't been given one, write to us at <a href="mailto:client@looplo.com">client@looplo.com</a>.</p>
+  </div>
+</div>
+
+<!-- Behind the gate -->
+<div class="inside" id="inside">
+  <div class="wrap">
+    <p class="eyebrow">Client area</p>
+    <h2>Welcome back</h2>
+    <p class="lead">This is the layer beneath the front page. Where the front page shows what Custody is, here is how it's built - and your own measurement once it's set up.</p>
+    <a class="btn" href="https://looplo.com/index.html#custody" target="_blank" rel="noopener">Open the full Custody material</a>
+    <ul class="list">
+      <li><b>The whole dashboard</b>, field by field, with your own domains</li>
+      <li><b>The architecture behind it</b> - context, containers and attestation flow (C4)</li>
+      <li><b>Proof, not claim</b> - how the key is released only once the code has proven its integrity</li>
+      <li><b>White papers</b> - Nordic Trust Layer and the technical foundation</li>
+      <li><b>Your own measurement</b> - maturity, cadence and footholds, updated over time</li>
+    </ul>
+    <p class="note">The front page sells the picture. Here is the proof behind it.</p>
+  </div>
+  <footer><div class="wrap">Looplo Custody &middot; client area &middot; soft access &middot; v2-1-5</div></footer>
+</div>
+
+<script>
+  (function(){
+    var CODE = "custody";              /* soft code - change freely, shared with clients */
+    var KEY = "looplo_klient_ok";
+    var gate = document.getElementById('gate');
+    var inside = document.getElementById('inside');
+    function open(){ gate.style.display='none'; inside.classList.add('on'); }
+    try{ if(sessionStorage.getItem(KEY)==='1') open(); }catch(e){}
+    function attempt(){
+      var v = (document.getElementById('code').value||'').trim().toLowerCase();
+      if(v === CODE){ try{sessionStorage.setItem(KEY,'1');}catch(e){} open(); }
+      else { document.getElementById('msg').textContent = 'That code doesn't match. Try again, or write to Jacob.'; }
+    }
+    document.getElementById('go').addEventListener('click', attempt);
+    document.getElementById('code').addEventListener('keydown', function(e){ if(e.key==='Enter') attempt(); });
+  })();
+</script>
+
+<script>
+/* Glemt adgangskode -> krypteret anmodning via modtag.php (ingen mailto). Samme kanal som wp.js. */
+(function(){
+  var PUB="MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAkXtC2ve86glLlz4052w0Vj28S2zvkq4M0/jDSF0SiQ439JyDFVtCvznJ83XV1g29INH2PTYaTyp0GxMt1F1+la1vCJfe+3Z1lJExMOt2+XD6ZPZZYfrJiPbgOOryyeVmtkdHfm2n+KzN/to+kDNu2b62eE30rC933tofJaJnTc0/rfX9MDg9N00o7L6XRnMLaoO0pqij5mhNlWBFWav1+yqcb90EEyYuFDo63GIQEZFX/ztQsOeFSzhd4VWL8G50U9hDkHhSraLket+XmsyVE2OVW3gBhgGaM69NnV/cEg/1W+pYRhMVwdsOzntK3jJAI68w8dMOVpzyS9rtWLzI50tw2Np9XSzxIoZBcHB4VY665+B1TVjh2jrZE/JWnRvmQLl6C1b3BVmkQv+vcBMh7oq0Lz36eqQzTbX+R/yya6uEpN5npdAm9B2nwE0iK9pAbeYmvT53VM92/SchG81u84qZe8u8rFpfrBqZUD9iRZapB5hz09sqLQ7oxEdqfPMVs6fZFeks+Cd/I7OVS3Oj+rnSBNzuBmFn6WSgPhHAc1aXR1EJCjf7DezWeFznMPpfq512KFCDmqUuohOjtmtECnvvef8yMFaMbu5m+JQ33n/tHWTGeuNT0nIrVVyZp6ERtLsBSnM0TaT/qLhSTx0BvXnWCf5hItQJMyN5gKbLuHUCAwEAAQ==";
+  var OMRAADE="client";
+  var TXT={da:{tom:"Skriv dit navn eller e-mail \u00f8verst f\u00f8rst.",send:"Sender\u2026",ok:"Anmodning sendt \u2013 Jacob nulstiller koden og vender tilbage.",fejl:"Kunne ikke sende lige nu. Pr\u00f8v igen senere."},
+            en:{tom:"Enter your name or email above first.",send:"Sending\u2026",ok:"Request sent \u2013 Jacob will reset the code and get back to you.",fejl:"Could not send right now. Please try again later."}};
+  var lang=(document.documentElement.lang==="en")?"en":"da", tx=TXT[lang];
+  function b64b(b){var s=atob(b),u=new Uint8Array(s.length);for(var i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u.buffer;}
+  function bb64(b){var u=new Uint8Array(b),s="";for(var i=0;i<u.length;i++)s+=String.fromCharCode(u[i]);return btoa(s);}
+  async function send(obj){
+    var pt=new TextEncoder().encode(JSON.stringify(obj));
+    var k=await crypto.subtle.generateKey({name:"AES-GCM",length:256},true,["encrypt"]);
+    var iv=crypto.getRandomValues(new Uint8Array(12));
+    var ct=await crypto.subtle.encrypt({name:"AES-GCM",iv:iv},k,pt);
+    var pub=await crypto.subtle.importKey("spki",b64b(PUB),{name:"RSA-OAEP",hash:"SHA-256"},false,["encrypt"]);
+    var ek=await crypto.subtle.encrypt({name:"RSA-OAEP"},pub,await crypto.subtle.exportKey("raw",k));
+    var r=await fetch("modtag.php",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({ek:bb64(ek),iv:bb64(iv),ct:bb64(ct)})});
+    if(!r.ok)throw 0; var j=await r.json(); if(!j.ok)throw 0;
+  }
+  var link=document.getElementById("glemt"), msg=document.getElementById("msg");
+  if(link&&msg){link.addEventListener("click",function(e){
+    e.preventDefault();
+    var navn=((document.getElementById("navn")||{}).value||"").trim();
+    if(!navn){msg.style.color="#46505E";msg.textContent=tx.tom;var n=document.getElementById("navn");if(n)n.focus();return;}
+    link.style.pointerEvents="none";msg.style.color="#46505E";msg.textContent=tx.send;
+    send({type:"Glemt adgangskode",omraade:OMRAADE,navn:navn,sprog:lang,side:location.pathname,tid:new Date().toISOString()})
+      .then(function(){msg.style.color="#2F7D55";msg.textContent=tx.ok;})
+      .catch(function(){link.style.pointerEvents="";msg.style.color="";msg.textContent=tx.fejl;});
+  });}
+})();
+</script>
+</body>
+</html>

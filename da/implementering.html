@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Falkentorp Consulting - implementering af platforme til AI-agenter</title>
+<meta name="description" content="Falkentorp Consulting indfører platforme der holder styr på AI-agenter i drift: inventar, adgang og politik på tværs af platforme, med EU-hosting og revisionsspor.">
+<link rel="alternate" hreflang="da" href="implementering.html">
+<link rel="alternate" hreflang="en" href="../implementation.html">
+<link rel="alternate" hreflang="x-default" href="../implementation.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+    --paper:#EDF3F8;
+    --block:#FFFFFF;
+    --ink:#16222B;
+    --muted:#556169;
+    --accent:#0E5A63;
+    --accent-soft:#0E5A6315;
+    --hairline:#C9D9E5;
+    --on-accent:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1519;
+      --block:#141E24;
+      --ink:#E7EDF0;
+      --muted:#93A1A9;
+      --accent:#4FB3BF;
+      --accent-soft:#4FB3BF1F;
+      --hairline:#223038;
+      --on-accent:#0E1519;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1519;
+    --block:#141E24;
+    --ink:#E7EDF0;
+    --muted:#93A1A9;
+    --accent:#4FB3BF;
+    --accent-soft:#4FB3BF1F;
+    --hairline:#223038;
+    --on-accent:#0E1519;
+  }
+  *{box-sizing:inherit}
+  html{scroll-padding-top:env(safe-area-inset-top,0px); -webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{width:100%; max-width:960px; margin:0 auto; padding:0 24px}
+  .topnav{border-bottom:1px solid var(--hairline)}
+  .topnav .wrap{display:flex; gap:26px; padding-top:18px; padding-bottom:14px}
+  .topnav a{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:13px; letter-spacing:.03em; text-decoration:none; color:var(--muted); padding-bottom:3px; border-bottom:2px solid transparent}
+  .topnav a.active{color:var(--accent); border-bottom-color:var(--accent)}
+  .topnav a:hover{color:var(--ink)}
+  a{color:var(--accent)}
+  a:focus-visible, .btn:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
+
+  /* Hero */
+  .hero{padding:64px 0 36px}
+  .avail{
+    display:inline-flex; align-items:center; gap:9px;
+    margin:0 0 26px; padding:6px 13px;
+    font-size:14px; font-weight:500; color:var(--accent);
+    background:var(--accent-soft); border-radius:100px;
+  }
+  .dot{width:8px; height:8px; border-radius:50%; background:var(--accent); animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  @media (prefers-reduced-motion:reduce){.dot{animation:none}}
+  h1{
+    margin:0; font-size:clamp(2.2rem,7vw,3.2rem); font-weight:700;
+    letter-spacing:-.02em; line-height:1.03;
+  }
+  .byline{margin:.5rem 0 1rem; font-size:1.05rem; font-weight:500; color:var(--ink)}
+  .role{
+    margin:.6rem 0 1.4rem; font-size:clamp(1.15rem,3.4vw,1.45rem);
+    font-weight:500; color:var(--ink); max-width:24ch;
+  }
+  .lede{margin:0; max-width:60ch; color:var(--muted); font-size:1.08rem}
+  .proof{margin:1.3rem 0 0; font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:13px; color:var(--accent); letter-spacing:.01em; line-height:1.9}
+
+  /* Sections */
+  main{padding-bottom:48px}
+  section{padding-top:56px}
+  .section-title{
+    margin:0 0 28px; font-size:.95rem; font-weight:600; color:var(--muted);
+    padding-bottom:12px; border-bottom:1px solid var(--hairline);
+  }
+
+  /* Services */
+  .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px}
+  @media (max-width:680px){.grid{grid-template-columns:1fr}}
+  .svc{
+    background:var(--block);
+    border:1px solid var(--hairline);
+    border-left:3px solid var(--accent);
+    border-radius:4px;
+    padding:26px 24px 24px;
+  }
+  .svc h3{margin:0 0 .5rem; font-size:1.3rem; font-weight:600; letter-spacing:-.01em}
+  .svc-what{margin:0 0 1.1rem; color:var(--muted); font-size:1rem}
+  .svc ul{margin:0; padding:0; list-style:none}
+  .svc li{
+    position:relative; padding-left:20px; margin-bottom:.5rem; font-size:.98rem;
+  }
+  .svc li::before{
+    content:""; position:absolute; left:2px; top:.72em;
+    width:7px; height:1.5px; background:var(--accent);
+  }
+  .tags{
+    margin:1.3rem 0 0; display:flex; flex-wrap:wrap; gap:8px;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  .tags span{font-size:12.5px; color:var(--accent); opacity:.9}
+  .tags span:not(:last-child)::after{content:"·"; margin-left:8px; opacity:.5}
+
+  /* How */
+  .how ul{margin:0; padding:0; list-style:none; max-width:62ch}
+  .how li{padding-left:22px; position:relative; margin-bottom:.8rem; color:var(--ink)}
+  .how li::before{content:""; position:absolute; left:0; top:.68em; width:10px; height:2px; background:var(--accent)}
+
+  /* Credentials */
+  .cred-list{display:grid; gap:0; max-width:64ch}
+  .cred-row{
+    display:grid; grid-template-columns:140px 1fr; gap:16px;
+    padding:14px 0; border-top:1px solid var(--hairline); font-size:.98rem;
+  }
+  .cred-row:last-child{border-bottom:1px solid var(--hairline)}
+  .cred-row dt{color:var(--muted); font-weight:500; margin:0}
+  .cred-row dd{margin:0}
+  @media (max-width:520px){.cred-row{grid-template-columns:1fr; gap:3px}}
+
+  /* Contact */
+  .contact p{max-width:52ch; color:var(--muted)}
+  .btn{
+    display:inline-block; margin:.4rem 0 1.1rem;
+    background:var(--accent); color:var(--on-accent);
+    text-decoration:none; font-weight:600; font-size:1.02rem;
+    padding:14px 26px; border-radius:5px;
+  }
+  .btn:hover{opacity:.92}
+
+  footer{
+    margin-top:40px; padding:28px 0 48px;
+    border-top:1px solid var(--hairline);
+    color:var(--muted); font-size:.9rem;
+  }
+  footer .wrap{display:flex; flex-wrap:wrap; gap:6px 18px; justify-content:space-between}
+  .topnav a{white-space:nowrap}
+  .topnav .wrap{flex-wrap:nowrap; align-items:baseline}
+  @media (max-width:560px){.topnav .wrap{gap:14px} .topnav .lang{gap:10px}}
+  @media (max-width:430px){.topnav .wrap{gap:11px; padding-left:18px; padding-right:18px} .topnav a{font-size:12px; letter-spacing:0} .topnav .lang{gap:8px}}
+</style>
+<style>
+  .steps{display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:1px solid var(--hairline); border-radius:4px; overflow:hidden; background:var(--block)}
+  @media (max-width:680px){.steps{grid-template-columns:1fr}}
+  .steps div{padding:18px 18px 20px; border-right:1px solid var(--hairline)}
+  .steps div:last-child{border-right:none}
+  @media (max-width:680px){.steps div{border-right:none; border-bottom:1px solid var(--hairline)} .steps div:last-child{border-bottom:none}}
+  .steps b{display:block; font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:12.5px; color:var(--accent); font-weight:500; margin-bottom:6px}
+  .steps h3{margin:0 0 .3rem; font-size:1.08rem; font-weight:600}
+  .steps p{margin:0; color:var(--muted); font-size:.95rem; line-height:1.5}
+  .note{margin:1.4rem 0 0; max-width:64ch; color:var(--muted)}
+  .topnav .lang{margin-left:auto; display:flex; gap:14px}
+  .topnav .lang a.on{color:var(--accent); border-bottom-color:var(--accent)}
+  .brand{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin:0 0 18px}
+</style>
+</head>
+<body>
+
+<nav class="topnav"><div class="wrap"><a href="index.html">Profil</a><a href="ydelseskatalog.html">Ydelser</a><a href="implementering.html" class="active">AI-implementering</a><span class="lang"><a href="implementering.html" class="on">DA</a><a href="../implementation.html">EN</a></span></div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="brand">Falkentorp Consulting</p>
+    <p class="avail"><span class="dot"></span>Implementeringspartner · AI-agenter og MCP</p>
+    <h1>Platformen der holder styr på jeres AI-agenter. Sat op og i drift.</h1>
+    <p class="lede" style="margin-top:1.2rem">Agenterne kommer fra mange platforme på én gang - Copilot, Salesforce, egne udviklede. Vi indfører den platform, der ser dem alle: hvilke agenter der kører, hvad de har adgang til, og hvad de må. I drift, ikke kun på papiret.</p>
+    <p class="proof">UFST platformbygning på Azure · integrationsplatform i staten · SC-100 / SC-200 · NIST-ledelsesansvar (DTU)</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="services">
+      <h2 class="section-title">Hvad vi leverer</h2>
+      <div class="grid">
+
+        <article class="svc">
+          <h3>Opsætning og integration</h3>
+          <p class="svc-what">Platformen sat op i jeres miljø og koblet på det, I allerede har.</p>
+          <ul>
+            <li>Installation og konfiguration, med dataplacering og EU-hosting afklaret</li>
+            <li>Kobling til identitet (fx Entra ID), logning og SIEM</li>
+            <li>Tilslutning af MCP-servere, værktøjer og agent-platforme</li>
+            <li>Test i et afgrænset område før skarp drift</li>
+          </ul>
+          <p class="tags"><span>MCP</span><span>Entra ID</span><span>SIEM</span></p>
+        </article>
+
+        <article class="svc">
+          <h3>Overblik og regler i drift</h3>
+          <p class="svc-what">Fra "vi ved ikke hvad der kører" til regler, der faktisk håndhæves.</p>
+          <ul>
+            <li>Inventar over agenter, MCP-servere, skills og lokale modeller</li>
+            <li>Jeres regler omsat til politikker platformen håndhæver</li>
+            <li>Adgang og identitet for agenter - hvad de må, på hvis vegne</li>
+            <li>Alarmer og stop ved handlinger uden for reglerne</li>
+          </ul>
+          <p class="tags"><span>agent-inventar</span><span>runtime-politik</span></p>
+        </article>
+
+        <article class="svc">
+          <h3>Sikkerhed og compliance</h3>
+          <p class="svc-what">Spor og dokumentation, der holder over for revision og tilsyn.</p>
+          <ul>
+            <li>Revisionsspor over agenters handlinger og beslutningsgrundlag</li>
+            <li>NIS2-parathed for agentisk AI</li>
+            <li>Dokumentation i linje med EU's AI-forordning</li>
+            <li>Forberedelse til revision og audit</li>
+          </ul>
+          <p class="tags"><span>NIS2</span><span>AI-forordningen</span><span>audit</span></p>
+        </article>
+
+        <article class="svc">
+          <h3>Overdragelse og drift</h3>
+          <p class="svc-what">Jeres folk kan selv køre det, når vi går.</p>
+          <ul>
+            <li>Træning af drift, sikkerhed og arkitekter</li>
+            <li>Runbooks og driftsprocedurer</li>
+            <li>Overdragelse til egen drift eller driftsleverandør</li>
+            <li>Ingen binding bagefter</li>
+          </ul>
+          <p class="tags"><span>runbooks</span><span>overdragelse</span></p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="how">
+      <h2 class="section-title">Forløbet</h2>
+      <div class="steps">
+        <div><b>01 · 1 uge</b><h3>Afklaring</h3><p>Jeres landskab, krav og hvor agenterne allerede kører.</p></div>
+        <div><b>02 · 3-4 uger</b><h3>Pilot</h3><p>Platformen i drift i ét afgrænset område med rigtige agenter.</p></div>
+        <div><b>03 · efter behov</b><h3>Udrulning</h3><p>Bredere dækning, flere platforme og strammere regler.</p></div>
+        <div><b>04 · 1-2 uger</b><h3>Overdragelse</h3><p>Træning, runbooks og drift hos jer.</p></div>
+      </div>
+      <p class="note">Bedst for organisationer med splittet landskab, flere leverandører eller krav om suverænitet - typisk offentlig sektor og regulerede brancher, hvor én leverandørs egen platform ikke dækker det hele. Vi bygger gerne oven på en eksisterende kortlægning af jeres agenter og regler, fra jer selv eller en uafhængig rådgiver.</p>
+    </section>
+
+    <section class="cred">
+      <h2 class="section-title">Baggrund</h2>
+      <dl class="cred-list">
+        <div class="cred-row"><dt>Platform</dt><dd>Senior IT-ledelse på store statslige platforme (UFST, Moderniseringsstyrelsen, Økonomistyrelsen), herunder platformbygning på Azure og integrationsplatform.</dd></div>
+        <div class="cred-row"><dt>AI</dt><dd>Medstifter af musik-AI med neurale netværk (US-patent). Arbejder i dag med agentisk AI, MCP og styring i drift.</dd></div>
+        <div class="cred-row"><dt>Sikkerhed</dt><dd>DTU-eksamen i ledelsesansvar og IT-sikkerhed (NIST), bestået med 12. Gennemført kursus i SC-100 og SC-200.</dd></div>
+        <div class="cred-row"><dt>Uddannelse</dt><dd>Datalog, cand.comm. (RUC).</dd></div>
+      </dl>
+    </section>
+
+    <section class="contact">
+      <h2 class="section-title">Kontakt</h2>
+      <a class="btn" href="https://cal.com/jacobfalkentorp">Book et kald</a>
+      <p>Eller tag direkte fat: <a href="mailto:jacob@falkentorp.dk">jacob@falkentorp.dk</a> · <a href="tel:+4531421210">+45 3142 1210</a>. Kan købes direkte eller gennem en SKI 02.17-leverandør.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Falkentorp Consulting · København</span>
+    <span>CVR-registreret virksomhed · implementering v1-0-0</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jacob Falkentorp - senior IT architect and delivery advisor</title>
+<link rel="alternate" hreflang="da" href="da/ydelseskatalog.html">
+<link rel="alternate" hreflang="en" href="services.html">
+<link rel="alternate" hreflang="x-default" href="services.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+    --paper:#EDF3F8;
+    --block:#FFFFFF;
+    --ink:#16222B;
+    --muted:#556169;
+    --accent:#0E5A63;
+    --accent-soft:#0E5A6315;
+    --hairline:#C9D9E5;
+    --on-accent:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0E1519;
+      --block:#141E24;
+      --ink:#E7EDF0;
+      --muted:#93A1A9;
+      --accent:#4FB3BF;
+      --accent-soft:#4FB3BF1F;
+      --hairline:#223038;
+      --on-accent:#0E1519;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0E1519;
+    --block:#141E24;
+    --ink:#E7EDF0;
+    --muted:#93A1A9;
+    --accent:#4FB3BF;
+    --accent-soft:#4FB3BF1F;
+    --hairline:#223038;
+    --on-accent:#0E1519;
+  }
+  *{box-sizing:inherit}
+  html{scroll-padding-top:env(safe-area-inset-top,0px); -webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{width:100%; max-width:960px; margin:0 auto; padding:0 24px}
+  .topnav{border-bottom:1px solid var(--hairline)}
+  .topnav .wrap{display:flex; gap:26px; padding-top:18px; padding-bottom:14px}
+  .topnav a{font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:13px; letter-spacing:.03em; text-decoration:none; color:var(--muted); padding-bottom:3px; border-bottom:2px solid transparent}
+  .topnav a.active{color:var(--accent); border-bottom-color:var(--accent)}
+  .topnav a:hover{color:var(--ink)}
+  a{color:var(--accent)}
+  a:focus-visible, .btn:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
+
+  /* Hero */
+  .hero{padding:64px 0 36px}
+  .avail{
+    display:inline-flex; align-items:center; gap:9px;
+    margin:0 0 26px; padding:6px 13px;
+    font-size:14px; font-weight:500; color:var(--accent);
+    background:var(--accent-soft); border-radius:100px;
+  }
+  .dot{width:8px; height:8px; border-radius:50%; background:var(--accent); animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  @media (prefers-reduced-motion:reduce){.dot{animation:none}}
+  h1{
+    margin:0; font-size:clamp(2.2rem,7vw,3.2rem); font-weight:700;
+    letter-spacing:-.02em; line-height:1.03;
+  }
+  .byline{margin:.5rem 0 1rem; font-size:1.05rem; font-weight:500; color:var(--ink)}
+  .role{
+    margin:.6rem 0 1.4rem; font-size:clamp(1.15rem,3.4vw,1.45rem);
+    font-weight:500; color:var(--ink); max-width:24ch;
+  }
+  .lede{margin:0; max-width:60ch; color:var(--muted); font-size:1.08rem}
+  .proof{margin:1.3rem 0 0; font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:13px; color:var(--accent); letter-spacing:.01em; line-height:1.9}
+
+  /* Sections */
+  main{padding-bottom:48px}
+  section{padding-top:56px}
+  .section-title{
+    margin:0 0 28px; font-size:.95rem; font-weight:600; color:var(--muted);
+    padding-bottom:12px; border-bottom:1px solid var(--hairline);
+  }
+
+  /* Services */
+  .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px}
+  @media (max-width:680px){.grid{grid-template-columns:1fr}}
+  .svc{
+    background:var(--block);
+    border:1px solid var(--hairline);
+    border-left:3px solid var(--accent);
+    border-radius:4px;
+    padding:26px 24px 24px;
+  }
+  .svc h3{margin:0 0 .5rem; font-size:1.3rem; font-weight:600; letter-spacing:-.01em}
+  .svc-what{margin:0 0 1.1rem; color:var(--muted); font-size:1rem}
+  .svc ul{margin:0; padding:0; list-style:none}
+  .svc li{
+    position:relative; padding-left:20px; margin-bottom:.5rem; font-size:.98rem;
+  }
+  .svc li::before{
+    content:""; position:absolute; left:2px; top:.72em;
+    width:7px; height:1.5px; background:var(--accent);
+  }
+  .tags{
+    margin:1.3rem 0 0; display:flex; flex-wrap:wrap; gap:8px;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  .tags span{font-size:12.5px; color:var(--accent); opacity:.9}
+  .tags span:not(:last-child)::after{content:"·"; margin-left:8px; opacity:.5}
+
+  /* How */
+  .how ul{margin:0; padding:0; list-style:none; max-width:62ch}
+  .how li{padding-left:22px; position:relative; margin-bottom:.8rem; color:var(--ink)}
+  .how li::before{content:""; position:absolute; left:0; top:.68em; width:10px; height:2px; background:var(--accent)}
+
+  /* Credentials */
+  .cred-list{display:grid; gap:0; max-width:64ch}
+  .cred-row{
+    display:grid; grid-template-columns:140px 1fr; gap:16px;
+    padding:14px 0; border-top:1px solid var(--hairline); font-size:.98rem;
+  }
+  .cred-row:last-child{border-bottom:1px solid var(--hairline)}
+  .cred-row dt{color:var(--muted); font-weight:500; margin:0}
+  .cred-row dd{margin:0}
+  @media (max-width:520px){.cred-row{grid-template-columns:1fr; gap:3px}}
+
+  /* Contact */
+  .contact p{max-width:52ch; color:var(--muted)}
+  .btn{
+    display:inline-block; margin:.4rem 0 1.1rem;
+    background:var(--accent); color:var(--on-accent);
+    text-decoration:none; font-weight:600; font-size:1.02rem;
+    padding:14px 26px; border-radius:5px;
+  }
+  .btn:hover{opacity:.92}
+
+  footer{
+    margin-top:40px; padding:28px 0 48px;
+    border-top:1px solid var(--hairline);
+    color:var(--muted); font-size:.9rem;
+  }
+  footer .wrap{display:flex; flex-wrap:wrap; gap:6px 18px; justify-content:space-between}
+  .topnav .lang{margin-left:auto; display:flex; gap:14px}
+  .topnav .lang a.on{color:var(--accent); border-bottom-color:var(--accent)}
+  .topnav a{white-space:nowrap}
+  .topnav .wrap{flex-wrap:nowrap; align-items:baseline}
+  @media (max-width:560px){.topnav .wrap{gap:14px} .topnav .lang{gap:10px}}
+  @media (max-width:430px){.topnav .wrap{gap:11px; padding-left:18px; padding-right:18px} .topnav a{font-size:12px; letter-spacing:0} .topnav .lang{gap:8px}}
+</style>
+</head>
+<body>
+
+<nav class="topnav"><div class="wrap"><a href="index.html">Profile</a><a href="services.html" class="active">Services</a><a href="implementation.html">AI Implementation</a><span class="lang"><a href="da/ydelseskatalog.html">DA</a><a href="services.html" class="on">EN</a></span></div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Services</h1>
+    <p class="byline">Jacob Falkentorp</p>
+    <p class="lede">Concrete IT deliverables, separately or combined, alone or together with the client's own people and other vendors. From independent challenge before the decision to built, packaged and responsibly put into operation. The advisory work corresponds to the Danish public framework SKI 02.15 IT advisory, the hands-on work to SKI 02.17 IT consultants.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="services">
+      <div class="grid">
+
+        <article class="svc">
+          <h3>Direction and 2nd opinion</h3>
+          <p class="svc-what">Independent challenge and direction - ideally early, while the options are open, not as firefighting afterwards.</p>
+          <ul>
+            <li>Early sparring on direction and vendor strategy, before the contract locks in</li>
+            <li>Assessment of solution designs and vendor proposals</li>
+            <li>Pre-analysis and decision basis for management and tenders</li>
+            <li>Risk and dependency assessment across systems, vendor-independent</li>
+          </ul>
+          <p class="tags"><span>public tenders</span><span>pre-analysis</span><span>enterprise architecture</span></p>
+        </article>
+
+        <article class="svc">
+          <h3>Build and rebuild</h3>
+          <p class="svc-what">Platform and architecture from scratch, or rework of what has grown out of control.</p>
+          <ul>
+            <li>Platform and solution architecture from the ground up</li>
+            <li>Legacy modernisation (Oracle exit, monolith to services)</li>
+            <li>Migration to hyperscale cloud with EU/Danish sovereignty</li>
+            <li>Vendor-independent architecture, so the client is not locked into one stack</li>
+          </ul>
+          <p class="tags"><span>sovereignty stack</span><span>modernisation</span></p>
+        </article>
+
+        <article class="svc">
+          <h3>Security that works in operation</h3>
+          <p class="svc-what">Security and compliance built into a development organisation, not added on afterwards.</p>
+          <ul>
+            <li>Control environment and security management (NIST, ISO 27001 line)</li>
+            <li>Security in the development and delivery chain</li>
+            <li>NIS2 and compliance readiness</li>
+            <li>Preparation for audit</li>
+          </ul>
+          <p class="tags"><span>NIST</span><span>ISO 27001</span><span>NIS2</span></p>
+        </article>
+
+        <article class="svc">
+          <h3>Delivery and engineering</h3>
+          <p class="svc-what">The frame for how things are built, packaged and responsibly put into operation - set up and governed at architecture level, so the delivery team builds on a solid foundation.</p>
+          <ul>
+            <li>Design and governance of the CI/CD chain (commit to production, rollback, traceability)</li>
+            <li>Strategy for containerisation and portability across cloud and on-prem</li>
+            <li>Principles and frameworks for infrastructure as code</li>
+            <li>Technical review and direction for the delivery team</li>
+          </ul>
+          <p class="tags"><span>Continuous Delivery</span><span>Docker</span><span>Kubernetes</span></p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="how">
+      <h2 class="section-title">Way of working</h2>
+      <ul>
+        <li>Interim, project or defined deliverable, as the assignment requires.</li>
+        <li>Alone or together with the client's own people and other vendors.</li>
+        <li>Documentation along the way, so the client can take over - no lock-in afterwards.</li>
+      </ul>
+    </section>
+
+    <section class="cred">
+      <h2 class="section-title">Background</h2>
+      <dl class="cred-list">
+        <div class="cred-row"><dt>Experience</dt><dd>30+ years across public and private: internet pioneer, co-founder of a music AI company (US patent), company turnarounds (including commercials production), senior government IT leadership and board work.</dd></div>
+        <div class="cred-row"><dt>Sector</dt><dd>Public and private: large Danish government procurements (Danish Tax Agency, Agency for Modernisation, Danish Agency for Public Finance and Management), media and film, tech start-up.</dd></div>
+        <div class="cred-row"><dt>Education</dt><dd>MSc in Computer Science and Communication (Roskilde University).</dd></div>
+        <div class="cred-row"><dt>Security</dt><dd>DTU exam in management responsibility and IT security (NIST), passed with top grade. Completed SC-100 and SC-200 courses.</dd></div>
+      </dl>
+    </section>
+
+    <section class="contact">
+      <h2 class="section-title">Contact</h2>
+      <a class="btn" href="https://cal.com/jacobfalkentorp">Book a call</a>
+      <p>Or get in touch directly: <a href="mailto:jacob@falkentorp.dk">jacob@falkentorp.dk</a> · <a href="tel:+4531421210">+45 3142 1210</a>. Can be booked directly, through your preferred SKI 02.15 or 02.17 supplier (Danish public frameworks), or we find a way together.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Jacob Falkentorp · Copenhagen</span>
+    <span>Danish registered company (CVR) · v1-8-0</span>
+  </div>
+</footer>
+
+</body>
+</html>

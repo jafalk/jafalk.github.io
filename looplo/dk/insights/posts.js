@@ -19,6 +19,15 @@
    ───────────────────────────────────────────────────────────── */
 window.POSTS = [
   {
+    date: "2026-11-21", ai: true,
+    title: "Strengen der ikke findes",
+    body: "En musiker tegner harpestrenge i luften, og et kamera gør hver bevægelse til en tone. Fysikken står synlig, men en rigtig streng gør mere end at klinge: den gør modstand, og spændingen under fingeren er selve informationen. Strengen i luften beholder billedet af koblingen og slipper modstanden. De bedste grænseflader forsvinder - men nogle gange forsvinder den modstand, der holdt hånden på plads, med dem.",
+    tags: "#Looplo",
+    en_title: "The string that does not exist",
+    en_body: "A musician draws harp strings in the air, and a camera turns each movement into a note. The physics becomes visible, but a real string does more than sound: it resists, and the tension under the finger is the information itself. The string in the air keeps the picture of the coupling and lets go of the resistance. The best interfaces disappear - but sometimes the resistance that held the hand in place disappears with them.",
+    url: "7529862701032861696"
+  },
+  {
     date: "2026-11-05", ai: true,
     title: "Strategisk AI begynder, hvor business casen slutter",
     body: "En bestyrelse godkender AI som alt andet: én business case ad gangen. Men værdien og risikoen ved AI i skala sidder sjældent inde i det enkelte initiativ - den sidder i de uejede koblinger mellem domænerne. Det rette bestyrelses-spørgsmål er ikke, hvor mange initiativer der er finansieret, men hvem der ejer world-modellen, agenterne handler på.",

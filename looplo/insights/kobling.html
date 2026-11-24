@@ -1,0 +1,203 @@
+<!doctype html>
+<!-- looplo.com/insights/kobling.html - HOVEDFEED: ALLE opslag (inkl. AI). -->
+<!-- Alle opslag redigeres i posts.js (delt kilde for begge feeds). -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Looplo - Kobling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper:#EEF1EE;
+    --ink:#0F2E36;
+    --ink-soft:#3C5760;
+    --sage:#8FA9A6;
+    --dot:#C2791C;
+    --amber:#F0C988;
+    --rule:rgba(15,46,54,.14);
+    --thread:rgba(15,46,54,.18);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px}
+
+  /* Masthead */
+  header{padding:30px 0 28px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk";font-weight:600;font-size:15px;letter-spacing:.01em}
+  .mark{width:11px;height:11px;border-radius:50%;background:var(--dot);flex:none}
+  .wordmark{font-family:"Space Grotesk";font-weight:700;font-size:clamp(38px,8vw,60px);line-height:1.02;letter-spacing:-.02em;margin:26px 0 0}
+  .lede{color:var(--ink-soft);font-size:18px;max-width:44ch;margin:14px 0 0}
+  .nav{margin-top:26px;font-size:14px;color:var(--sage)}
+  .nav a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--dot);padding-bottom:1px}
+  .nav a.dim{color:var(--sage);border-bottom-color:var(--rule)}
+  .nav span{padding:0 10px;color:var(--rule)}
+
+  /* Thread */
+  main{padding-bottom:80px}
+  .thread{list-style:none;margin:0;padding:0;position:relative}
+  .thread::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1.5px;background:var(--thread)}
+  .post{position:relative;padding:0 0 40px 40px}
+  .node{position:absolute;left:0;top:6px;width:12px;height:12px;border-radius:50%;background:var(--dot);box-shadow:0 0 0 5px var(--paper)}
+  time{display:block;font-size:13px;color:var(--sage);font-variant-numeric:tabular-nums;margin-bottom:8px}
+  .post h2{font-family:"Space Grotesk";font-weight:600;font-size:21px;line-height:1.25;letter-spacing:-.01em;margin:0 0 8px}
+  .post p{margin:0 0 12px;color:var(--ink-soft);font-size:16.5px}
+  .tags{font-size:13px;color:var(--sage)}
+  .read{display:inline-block;margin-top:4px;font-size:14.5px;color:var(--ink);text-decoration:none;font-weight:500;border-bottom:1.5px solid var(--dot);padding-bottom:1px}
+  .read:hover{color:var(--dot)}
+
+  /* Hero (newest) */
+  .post.hero{padding-bottom:48px}
+  .post.hero h2{font-size:clamp(26px,5.5vw,34px);line-height:1.15}
+  .post.hero p{font-size:18px;color:var(--ink)}
+  .post.hero .node{width:15px;height:15px;top:5px;left:-1.5px}
+
+  footer{border-top:1px solid var(--rule);padding:28px 0 60px;color:var(--sage);font-size:13.5px}
+  footer a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--dot);padding-bottom:1px}
+
+  @media (max-width:520px){
+    header{padding:20px 0 22px}
+    .post{padding-left:34px}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .node{transition:transform .2s ease}
+  }
+  .post .ill{display:block;width:100%;height:auto;border-radius:10px;margin:12px 0 4px}
+
+  /* ── harmoniseret site-menu (scoped, lp-) ── */
+  .lp-topbar{position:sticky;top:0;z-index:100;background:rgba(244,246,248,.97);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);font-family:"Archivo",Arial,sans-serif}
+  .lp-topbar a{color:#46505E;text-decoration:none}
+  .lp-wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .lp-hbar{border-bottom:1px solid #D8DEE6}
+  .lp-hbar .lp-wrap{display:flex;align-items:center;justify-content:space-between;height:44px}
+  .lp-logo{font-weight:800;font-size:18px;letter-spacing:-.02em;color:#141C2B !important}
+  .lp-logo span{color:#C77D3A}
+  .lp-logo sup{font-size:.64em;font-weight:600;vertical-align:top;margin-left:1px}
+  .lp-right{display:flex;align-items:center}
+  .lp-grp{display:flex;align-items:center;gap:16px}
+  .lp-lang{gap:12px;padding-left:16px;margin-left:16px;border-left:1px solid #D8DEE6}
+  .lp-right a{font-size:13px;font-weight:600;display:inline-flex;align-items:center}
+  .lp-right a:hover{color:#141C2B}
+  .lp-lang a{font-size:12px}
+  .lp-lang a.active{color:#C77D3A !important}
+  .lp-lk{width:11px;height:11px;margin-right:5px;opacity:.6}
+  .lp-hmenu{border-bottom:1px solid #D8DEE6;background:#fff}
+  .lp-hmenu .lp-wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:52px;flex-wrap:wrap}
+  .lp-menu{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+  .lp-menu a{font-size:15px;font-weight:600;padding:14px 0;border-bottom:2px solid transparent}
+  .lp-menu a.active{color:#C77D3A !important;border-color:#C77D3A}
+  .lp-menu a.far{margin-left:auto}
+  .lp-menu a:hover{color:#141C2B}
+  .lp-cta{font-size:14px;font-weight:600;color:#fff !important;background:#141C2B;padding:9px 16px;border-radius:6px;white-space:nowrap}
+  @media(max-width:780px){.lp-cta{display:none}}
+  @media(max-width:600px){.lp-hmenu .lp-wrap{min-height:0;padding:10px 24px} .lp-menu{gap:14px 16px} .lp-menu a{font-size:13.5px;padding:4px 0} .lp-grp{gap:12px}}
+</style>
+
+<div class="lp-topbar">
+  <div class="lp-hbar"><div class="lp-wrap">
+    <a class="lp-logo" href="../index.html">Looplo<span>.</span><sup>&#8482;</sup></a>
+    <div class="lp-right">
+      <span class="lp-grp"><a href="../klient.html"><svg class="lp-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Klient</a><a href="../partner.html"><svg class="lp-lk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Partner</a></span>
+      <span class="lp-grp lp-lang"><a href="#" id="lpDa" onclick="saetSprog('da');return false;">DA</a><a href="#" id="lpEn" onclick="saetSprog('en');return false;">EN</a></span>
+    </div>
+  </div></div>
+  <div class="lp-hmenu"><div class="lp-wrap">
+    <nav class="lp-menu">
+      <a href="../index.html">Custody</a>
+      <a href="../ai.html">AI</a>
+      <a href="../agents.html">Agentic</a>
+      <a href="../verify.html">Verify</a>
+      <a href="../peer.html">Peer</a>
+      <a href="kobling.html" class="far active">Insights</a>
+    </nav>
+    <a class="lp-cta" href="../index.html#kontakt">Book en gennemgang</a>
+  </div></div>
+</div>
+
+<div class="wrap">
+  <header>
+    <h1 class="wordmark" id="wordmark">Kobling</h1>
+    <p class="lede" id="lede">Værdi og risiko koncentrerer sig i koblingerne mellem domænerne - ikke inde i dem. Tanker herom, nyeste øverst.</p>
+    <nav class="nav">
+      <a id="navKob">Kobling</a><span>·</span><a class="dim" href="ai.html" id="navAi">AI</a>
+    </nav>
+  </header>
+
+  <main>
+    <ol class="thread" id="feed" aria-label="Seneste opslag"></ol>
+  </main>
+
+  <footer id="foot">
+    ● Jacob Falkentorp - Looplo. Fuld white paper mod en kaffe: <a href="https://cal.com/jacobfalkentorp">cal.com/jacobfalkentorp</a>
+  </footer>
+</div>
+
+<script src="../dk/insights/posts.js?v=14"></script>
+<script>
+var TX = {"da": {"wm": "Kobling", "lede": "Værdi og risiko koncentrerer sig i koblingerne mellem domænerne - ikke inde i dem. Tanker herom, nyeste øverst.", "back": "&larr; Tilbage", "nk": "Kobling", "na": "AI", "foot": "● Jacob Falkentorp - Looplo. Fuld white paper mod en kaffe: ", "sw": "EN", "read": "Læs på LinkedIn", "title": "Looplo - Kobling"}, "en": {"wm": "Coupling", "lede": "Value and risk concentrate in the couplings between domains, not inside them. Notes on that, newest first.", "back": "&larr; Back", "nk": "Coupling", "na": "AI", "foot": "● Jacob Falkentorp - Looplo. Full white paper over a coffee: ", "sw": "DA", "read": "Read the original on LinkedIn (Danish)", "title": "Looplo - Coupling"}};
+var lang = (new URLSearchParams(location.search).get("lang") === "da") ? "da" : "en";
+
+function liUrl(u){u=String(u).trim();
+  if(/^https?:\/\//i.test(u))return u;
+  if(/^\d{15,25}$/.test(u))return 'https://www.linkedin.com/feed/update/urn:li:activity:'+u+'/';
+  return u;}
+
+function saetSprog(l){ if(l!==lang) skiftSprog(); }
+function skiftSprog(){
+  lang = (lang === "da") ? "en" : "da";
+  var u = new URL(location.href);
+  if (lang === "en") u.searchParams.set("lang","en"); else u.searchParams.delete("lang");
+  history.replaceState(null,"",u);
+  tegn();
+}
+
+function tegn(){
+  var t = TX[lang];
+  document.documentElement.lang = lang;
+  var _da=document.getElementById("lpDa"),_en=document.getElementById("lpEn");
+  if(_da)_da.className=(lang==="da")?"active":""; if(_en)_en.className=(lang==="en")?"active":"";
+  document.title = t.title;
+  document.getElementById("wordmark").textContent = t.wm;
+  document.getElementById("lede").textContent = t.lede;
+  document.getElementById("navKob").textContent = t.nk;
+  document.getElementById("navAi").textContent = t.na;
+  var f = document.getElementById("foot");
+  f.innerHTML = t.foot + '<a href="https://cal.com/jacobfalkentorp">cal.com/jacobfalkentorp</a>';
+  // soeskendelink beholder sprogvalg
+  var q = (lang === "en") ? "?lang=en" : "";
+  var nk = document.getElementById("navKob"), na = document.getElementById("navAi");
+  if (nk.getAttribute("href")) nk.setAttribute("href","kobling.html"+q);
+  if (na.getAttribute("href")) na.setAttribute("href","ai.html"+q);
+
+  var fmt = new Intl.DateTimeFormat(lang === "en" ? "en-GB" : "da-DK",
+            { day:"numeric", month:"long", year:"numeric" });
+  var feed = document.getElementById("feed");
+  feed.innerHTML = "";
+  (window.POSTS || []).slice()
+    .sort(function(a,b){return new Date(b.date) - new Date(a.date);})
+    .forEach(function(p,i){
+      var li = document.createElement("li");
+      li.className = "post" + (i===0 ? " hero" : "");
+      li.innerHTML =
+        '<span class="node"></span>' +
+        '<time datetime="'+p.date+'">'+fmt.format(new Date(p.date))+'</time>' +
+        '<h2></h2>' +
+        (p.img ? '<img class="ill" src="../dk/insights/'+p.img+'" alt="">' : '') +
+        '<p></p>' +
+        (p.tags ? '<div class="tags"></div>' : '') +
+        (p.url ? '<a class="read" href="'+liUrl(p.url)+'" target="_blank" rel="noopener">'+t.read+'</a>' : '');
+      li.querySelector("h2").textContent = (lang==="en" && p.en_title) ? p.en_title : p.title;
+      li.querySelector("p").textContent  = (lang==="en" && p.en_body)  ? p.en_body  : p.body;
+      if (p.tags) li.querySelector(".tags").textContent = p.tags;
+      feed.appendChild(li);
+    });
+}
+tegn();
+</script>
